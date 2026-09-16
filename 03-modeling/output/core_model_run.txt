@@ -1,0 +1,75 @@
+==============================================================================
+1. COST OF THE TEN-YEAR OPERATING COMMITMENT (valued at start of 2033)
+   Ten payments of $50,000, first one immediate. Nominal total: $500,000.
+==============================================================================
+ discount rate |   reserve cost | Macaulay dur.
+         0.0% |       $500,000 |       4.50 yr
+         2.0% |       $458,112 |       4.34 yr
+         3.0% |       $439,305 |       4.26 yr
+         4.0% |       $421,767 |       4.18 yr
+         4.5% |       $413,440 |       4.14 yr
+         5.0% |       $405,391 |       4.10 yr
+         5.5% |       $397,610 |       4.06 yr
+         6.0% |       $390,085 |       4.02 yr
+
+==============================================================================
+2. DETERMINISTIC PORTFOLIO VALUE AT START OF 2033
+   $300k invested start-2027 (6 yrs) + $150k start-2028 (5 yrs)
+==============================================================================
+  return |    2033 value |   surplus over reserve @4.5%
+   2.0% |      $503,461 |                      $90,021
+   3.0% |      $532,107 |                     $118,667
+   4.0% |      $562,094 |                     $148,654
+   5.0% |      $593,471 |                     $180,031
+   6.0% |      $626,290 |                     $212,850
+   7.0% |      $660,602 |                     $247,162
+   8.0% |      $696,462 |                     $283,022
+   9.0% |      $733,924 |                     $320,484
+
+==============================================================================
+3. MONTE CARLO - illustrative growth portfolios (100,000 paths)
+==============================================================================
+
+Conservative  (mu 5.0%, sd  7%)
+  reserve cost @4.5%:        $413,440
+  P(2033 value >= reserve):  98.80%
+  2033 portfolio value  p5/p25/p50/p75/p95: $454,316 / $527,582 / $585,639 / $650,504 / $753,986
+  2031 portfolio value  p5/p50/p95:         $435,128 / $533,735 / $654,406
+  FACILITY CAPACITY     p5/p25/p50/p75/p95: $40,877 / $114,142 / $172,199 / $237,064 / $340,547
+
+Balanced      (mu 6.5%, sd 11%)
+  reserve cost @4.5%:        $413,440
+  P(2033 value >= reserve):  95.73%
+  2033 portfolio value  p5/p25/p50/p75/p95: $421,116 / $530,754 / $623,790 / $733,805 / $922,131
+  2031 portfolio value  p5/p50/p95:         $405,394 / $556,062 / $762,401
+  FACILITY CAPACITY     p5/p25/p50/p75/p95: $7,677 / $117,314 / $210,350 / $320,365 / $508,692
+
+Growth-tilted (mu 8.0%, sd 16%)
+  reserve cost @4.5%:        $413,440
+  P(2033 value >= reserve):  91.10%
+  2033 portfolio value  p5/p25/p50/p75/p95: $373,197 / $519,627 / $654,700 / $825,845 / $1,145,597
+  2031 portfolio value  p5/p50/p95:         $365,319 / $573,902 / $901,541
+  FACILITY CAPACITY     p5/p25/p50/p75/p95: $0 / $106,188 / $241,261 / $412,406 / $732,157
+
+NOTE: i.i.d. lognormal returns understate fat tails, autocorrelation and
+regime risk. Treat these as a SKELETON, not an answer. Before the Final
+Report we should re-run with (a) block-bootstrapped historical returns and
+(b) an explicit de-risking glidepath into 2033.
+
+==============================================================================
+4. THE DEFEASANCE BENCHMARK - cost at start of 2027 to lock the
+   entire ten-payment promise with Treasuries maturing 2033-2042
+==============================================================================
+  curve of 15 Sep 2026: $301,264  = 100.4% of the initial $300,000 contribution
+  curve of 02 Jan 2026: $325,868  = 108.6% of the initial $300,000 contribution
+
+  Total contributions:                 $450,000
+  Cost to fully defease the promise:   $301,264
+  Capital left free to seek growth:    $148,736  (33%)
+
+  READ THIS CAREFULLY: at today's yields Laura could make her entire
+  ten-year promise risk-free on day one for roughly the value of her
+  first contribution, and still have ~1/3 of her capital to grow for
+  the facility. Every unit of risk we take is therefore OPTIONAL and
+  must be justified by what it buys her - a larger facility gift -
+  not by the need to fund the residency. That is the strategy.
