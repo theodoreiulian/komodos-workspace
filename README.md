@@ -46,7 +46,7 @@ she can responsibly promise co-sponsors toward the facility itself.
 03-modeling/      Python models, simulations, outputs. Reproducible numbers only.
 04-portfolio/     Holdings, trade log, trading notes as written in WInS.
 05-deliverables/  Drafts of the three graded submissions, one folder each.
-06-team/          Roles, division of labour, meeting notes.
+06-team/          How we work, task log, meeting notes.
 99-admin/         Decision log — every strategic choice and why we made it.
 ```
 

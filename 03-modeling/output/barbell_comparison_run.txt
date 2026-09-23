@@ -1,0 +1,32 @@
+==============================================================================
+BARBELL: defease the promise at start of 2027, grow what is left
+==============================================================================
+  Defeased at start of 2027:   $301,264
+  Growth sleeve:               $148,736 (33% of contributions)
+  Sleeve invested start of 2028; 5 years to the start of 2033.
+  P(all ten $50,000 payments funded) = 100% BY CONSTRUCTION.
+  The whole facility gift is the growth sleeve. Nothing else is at stake.
+
+  100% equity (mu 8.0%, sd 16%)
+    2033 facility gift  p5/p25/p50/p75/p95: $120,028 / $165,660 / $206,817 / $258,578 / $355,104
+    2031 sleeve value   p5/p50/p95:         $119,074 / $181,197 / $275,173
+
+  80/20       (mu 7.0%, sd 13%)
+    2033 facility gift  p5/p25/p50/p75/p95: $128,523 / $167,473 / $200,963 / $241,441 / $313,321
+    2031 sleeve value   p5/p50/p95:         $126,154 / $178,114 / $251,057
+
+  balanced    (mu 6.5%, sd 11%)
+    2033 facility gift  p5/p25/p50/p75/p95: $135,573 / $169,826 / $198,326 / $231,846 / $289,409
+    2031 sleeve value   p5/p50/p95:         $131,766 / $176,717 / $236,667
+
+==============================================================================
+THE COMPARISON THAT MATTERS
+==============================================================================
+  Balanced whole-portfolio (laura_core_model.py, mu 6.5% sd 11%):
+    funding certainty 95.73%   facility gift p5 $7,677   median $210,350
+  Barbell, 100% equity sleeve (this script):
+    funding certainty 100%     facility gift p5 $120,028 median $206,817
+
+  Near-identical median gift. A floor 15x higher. Certainty instead of
+  confidence. If this survives scrutiny it is the strategy - so the job
+  now is to attack it, not admire it.
