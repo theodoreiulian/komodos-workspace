@@ -19,8 +19,10 @@ counts verified by script, not by eye. Formatting checked on the **exported PDF*
 not the source document. Submit 24 hours early — deadlines are 11:00 p.m. French
 time and **no extensions are granted**.
 
-## Drafting rule
-Analysis, structure, numbers, options and critique can come from anywhere,
-including AI tools. **The submitted prose is written by the students, in their
-own voice.** That is competition rule, not preference — and "authentic team
-voice" is a graded criterion in its own right.
+## Who does what
+Claude decides what each deliverable must say: the decisions, the numbers, the
+outline, and which Trading Notes to choose. It then checks the students' drafts
+(`judge-panel`, `rules-auditor`). **The students write every submitted sentence,
+in their own voice.** That is a competition rule — and "authentic team voice" is
+a graded criterion in its own right. Claude's contributions are disclosed in the
+Final Report's Works Cited, from `../99-admin/ai-use-log.md`.

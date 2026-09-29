@@ -8,6 +8,8 @@ source. No orphan numbers.
 |---|---|
 | `src/laura_core_model.py` | The arithmetic skeleton of the client problem |
 | `output/core_model_run.txt` | Saved output of the current run |
+| `src/barbell_comparison.py` | Locking in the whole promise with a ladder + a growth sleeve vs. one balanced portfolio |
+| `output/barbell_comparison_run.txt` | Saved output |
 
 ## `laura_core_model.py`
 
@@ -40,16 +42,17 @@ Four sections:
    mean reversion. → block bootstrap from historical returns.
 2. **The 2033 reserve discount rate is a single fixed input** and is the model's
    weakest assumption. → stochastic rates, or at minimum a sensitivity table.
-3. **No glidepath.** The simulation holds one risk level for six years; our actual
-   strategy will de-risk. → implement the glidepath rule once chosen.
+3. **No glidepath.** The simulation holds one risk level for six years. →
+   implement the glidepath rule once one is chosen.
 4. **No fees, commissions, taxes or inflation** in the projection. Taxes are out
    of scope per the case; the others are not.
 5. **No modelling of the 2031 promise decision** as a decision — only the
    distribution of the 2031 value.
 
 ## Conventions
-- Scripts are self-contained and re-runnable; anyone on the team can reproduce
-  any figure.
+- Scripts are self-contained and re-runnable; anyone can reproduce any figure.
+- New modelling work is done through the `quant-modeler` subagent standard
+  (`../.claude/agents/quant-modeler.md`).
 - Save output to `output/` and commit it, so a number in a draft can always be
   traced.
 - Comment the *assumptions*, not the syntax. Assumptions are what judges ask about.
