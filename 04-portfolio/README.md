@@ -3,7 +3,22 @@
 Live record of the WInS portfolio. Trading opens **28 Sep 2026** and closes
 **6 Nov 2026**, when the portfolio freezes permanently.
 
+## How a trade happens
+
+1. Claude decides the trade and writes, in the brief: ticker, buy/sell,
+   quantity, order type, and **the facts the Trading Note must contain**
+   (instrument, its job, the benefit, the risk it accepts, the link to the strategy).
+2. **The team writes the Trading Note** in its own words — it is later submitted
+   word for word in the Trading Notes Analysis, so it must be ours.
+   `rules-auditor` checks the order and the note before the trade.
+3. A team member enters the order and the note in WInS.
+4. At the same moment, they copy the note into `trading-notes.md` and add the fill
+   (date, price, quantity) to `trade-log.md`.
+5. If WInS rejects the order or the fill is very different from expected, don't
+   improvise — record what happened in `trade-log.md`; Claude will re-decide.
+
 ## What lives here
+- `wins-instruments.md` — what WInS actually lists (bonds, ETFs), checked on the platform
 - `trade-log.md` — every trade: date, security, quantity, price, sleeve, rationale
 - `trading-notes.md` — ⚠️ **the exact text entered in WInS**, copied verbatim.
   The Trading Notes Analysis requires notes reproduced exactly as they appear in

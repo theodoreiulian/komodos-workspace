@@ -35,35 +35,50 @@ she can responsibly promise co-sponsors toward the facility itself.
 
 ---
 
+## Who does what
+
+| | Does |
+|---|---|
+| **Claude (lead strategist)** | Research, modelling, and every strategy and trade decision. Logs each decision and writes a plain-language brief so the team can explain and defend it. Works to `CLAUDE.md` and `99-admin/playbook.md`. |
+| **Team Leader** | Kept in the loop through the briefs; explains decisions to the team; can veto any decision. Sole contact with Wharton; submits everything; roster and school letter. |
+| **The whole team** | Enters trades and Trading Notes in WInS exactly as specified; writes every submitted word in their own voice; presents at semifinals and the finale. |
+
+---
+
 ## How this repo is laid out
 
 ```
-00-competition/   The rules of the game. Authoritative. Read before anything else.
+CLAUDE.md         Claude's charter: role, session routine, rules, the integrity line.
+.claude/agents/   The subagents Claude uses (researcher, quant-modeler, red-team,
+                  judge-panel, rules-auditor, beginner-reader).
+00-competition/   The rules of the game. Authoritative.
                   └ source-documents/   Original PDFs, archived.
-01-research/      What we have learned. Knowledge base, market context, past winners,
-                  and the differentiation angles we are exploring.
-02-strategy/      Our actual strategy as it forms. Empty until we decide things.
+01-research/      Everything learned so far: knowledge base, market context, past
+                  winners, candidate strategic angles.
+02-strategy/      The strategy in force. Empty until Claude decides the thesis.
 03-modeling/      Python models, simulations, outputs. Reproducible numbers only.
-04-portfolio/     Holdings, trade log, trading notes as written in WInS.
-05-deliverables/  Drafts of the three graded submissions, one folder each.
-06-team/          How we work, task log, meeting notes.
-99-admin/         Decision log — every strategic choice and why we made it.
+04-portfolio/     Trade instructions, trade log, Trading Notes as entered in WInS.
+05-deliverables/  The three graded submissions, written by the students.
+06-team/briefings/  Claude's plain-language briefs to the Team Leader, one per decision.
+99-admin/         state.md (where things stand, what's next), decision-log.md,
+                  playbook.md (how Claude works), ai-use-log.md (disclosure record).
 ```
+
+**Start here:** `99-admin/state.md` for what is happening now, then the latest
+brief in `06-team/briefings/`.
 
 ---
 
 ## Working rules
 
 1. **Every number is reproducible.** If a figure appears in a deliverable it
-   comes from a script in `03-modeling/` or a cited source. No orphan numbers.
-2. **Write the trading note *before* the trade**, not after. It is evidence of
-   reasoning, and Wharton verifies notes against executed trades.
-3. **Log decisions in `99-admin/decision-log.md`** the day they are made. The
-   Final Report asks us to reflect on how our thinking evolved; we cannot
-   reconstruct that from memory in December.
-4. **The AI policy is strict and we follow it to the letter.** See
-   `00-competition/competition-brief.md` § AI and integrity. Short version: AI
-   may help us brainstorm and may be a tool we operate and document; it may not
-   write our submissions, and any AI-derived material is cited.
-5. **Start from the client, end at the client.** Any sentence in a deliverable
-   that could have been written about a generic investor is a wasted sentence.
+   comes from a script in `03-modeling/` or a cited source.
+2. **The Trading Note is written before the trade**, and entered in WInS word
+   for word as specified. Wharton checks notes against executed trades.
+3. **Every decision is logged** in `99-admin/decision-log.md` the day it is
+   made, including reversals.
+4. **The AI policy is followed to the letter.** Claude decides and analyses, but
+   writes no submitted prose. Everything Claude contributes is recorded in
+   `99-admin/ai-use-log.md` and disclosed in the Final Report's Works Cited.
+5. **Start from the client, end at the client.** Anything that could have been
+   written about a generic investor is wasted.

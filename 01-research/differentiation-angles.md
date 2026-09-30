@@ -189,6 +189,67 @@ Then the honest sentence to Laura becomes:
    timid. → Which is exactly why Angle B alone is insufficient, and why the
    growth sleeve has to have real conviction in it.
 
+### Further analysis (23 Sep 2026 — evidence, not a decision)
+
+*The team adopted this angle on 23 Sep. That adoption was cancelled on 29 Sep
+along with every other earlier decision (see `99-admin/decision-log.md`). The
+analysis produced for it is kept here as input.*
+
+**The barbell comparison** (`03-modeling/src/barbell_comparison.py`, i.i.d.
+lognormal returns, 15 Sep 2026 curve):
+
+| | Balanced whole portfolio | Defease + 100% equity sleeve |
+|---|---|---|
+| Funding certainty | 95.73% | 100%, by construction |
+| Median facility gift | $210,350 | $206,817 |
+| 5th-percentile gift | $7,677 | $120,028 |
+| 2031 sleeve value, 5th percentile | not modelled comparably | $119,074 |
+
+Reading: the median gift barely moves; the floor rises by roughly 15×. On these
+assumptions, certainty is paid for by giving up the top tail, not the middle.
+
+**Arguments for, strongest first**
+1. *The 2031 problem.* Laura must quote co-sponsors a range in 2031 for a gift made
+   in 2033. Under a statistical approach the honest floor is near zero, because a
+   bad 2032 can damage both the gift and the reserve.
+2. *Sequence-of-returns risk* (the damage done when bad years arrive while money
+   is being paid out) disappears for matched maturities — the 2038 bond does not
+   care what happened in 2035.
+3. *Checkable, not believable.* "Is 95.7% a high degree of certainty?" has no
+   defensible answer because the threshold is self-chosen; "do these bonds mature
+   on these dates?" can be verified by anyone.
+4. *The liability is perfectly hedgeable.* The $50,000 payments are fixed in
+   dollars, not inflation-linked, so an ordinary Treasury matches them exactly.
+5. *Certainty is cheap right now.* The same ladder cost $325,868 on the 2 Jan 2026
+   curve and $301,264 on 15 Sep — $24,604 cheaper as the 10-year yield rose from
+   4.19% to 5.00%.
+6. *Risk is moved, not removed.* It sits in the growth sleeve, where a bad outcome
+   costs a smaller building, never a broken promise.
+7. *Fits the client.* A creator making a personal promise to a community; the
+   structure lets her stop watching markets.
+8. *Survives the freeze.* A matched ladder's central claim does not change with a
+   month of market movement between 6 Nov and 4 Dec.
+9. *Trading discipline.* A ladder is bought once and held; few, well-reasoned
+   trades.
+
+**Objections raised, with the answers given at the time**
+1. *Locks the 15 Sep 2026 curve forever.* If yields rise, we overpaid for
+   certainty — an opportunity cost, never a broken promise.
+2. *The growth sleeve has one five-year window.* A 2032 crash takes the gift to
+   its floor. Real; the unresolved question was the sleeve's own glidepath (how
+   its risk steps down over time).
+3. *Is 67% in Treasuries "an appropriate balance"?* Argued that the case wording
+   ("*pursuing* growth and *protecting* capital") makes protection the
+   requirement and growth the aspiration. An interpretation, and must be stated
+   as one.
+4. *Over-fitting to one insight.* Not answered — flagged as needing a dedicated
+   attack.
+
+**Left open at the time:** full vs partial defeasance (full removes six years of
+compounding on two-thirds of the capital); whether WInS lists the instruments;
+sleeve contents; what makes this specific to Laura rather than any client with a
+fixed liability (flagged as the weak point).
+
 ---
 
 ## Angle C — A keepable promise: reputational risk as the objective function
@@ -350,7 +411,7 @@ with the evidence is the next phase of work.
 
 ---
 
-## Open questions before we choose
+## Open questions (as of 16 Sep)
 
 1. Can we actually build a ladder in WInS? Which maturities, and are there
    zero-coupon or target-maturity instruments? **Check in the practice window.**
@@ -366,4 +427,5 @@ with the evidence is the next phase of work.
 7. Are we over-fitting to one insight? What does a good report look like if the
    defeasance framing turns out to be less special than it appears?
 
-→ Record every resolution in `99-admin/decision-log.md`.
+→ These questions now live in the open-questions table of
+`99-admin/decision-log.md`, owned by Claude as lead strategist.

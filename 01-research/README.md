@@ -3,7 +3,7 @@
 | Document | What it covers |
 |---|---|
 | `past-winners-analysis.md` | Five years of winners, judge quotes, seven patterns, and why this year's redesigned case breaks the old template |
-| **`differentiation-angles.md`** | **Six candidate angles for standing out, with evidence and counter-arguments. Nothing decided — start here for strategy discussions.** |
+| **`differentiation-angles.md`** | **Six candidate angles for standing out, with evidence and counter-arguments, plus the fuller Angle B analysis from 23 Sep. None in force — this is the main input to the thesis decision.** |
 | `knowledge-base/01-liability-driven-investing.md` | The frame that fits this case: defeasance, matching, immunisation, the two-portfolio structure |
 | `knowledge-base/02-portfolio-construction-toolkit.md` | MVO and its limits, risk measures, factors, diversification, glidepaths, human capital, behavioural points |
 | `knowledge-base/03-risk-uncertainty-funding-certainty.md` | Three competing definitions of "high funding certainty," sequence risk, credible Monte Carlo, building the co-sponsor range |
@@ -13,7 +13,8 @@
 | `market-context/us-treasury-par-yield-curve-2026.csv` | Raw daily par yield curve, 2026 (treasury.gov) |
 
 ## How to use this
-- Strategy session → `differentiation-angles.md`, then the open questions at its end.
+- Thesis work → `differentiation-angles.md`, then the open questions in `../99-admin/decision-log.md`.
+- How winners worked → `past-winners-analysis.md`; Claude's rules drawn from it are in `../99-admin/playbook.md`.
 - "Is this allowed?" → `../00-competition/competition-brief.md`.
 - "What exactly must we submit?" → `../00-competition/deliverable-specs.md`.
 - "What do the numbers say?" → `../03-modeling/`.
