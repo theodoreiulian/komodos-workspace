@@ -17,7 +17,8 @@ beginners:
 2. Why, with a worked example and the arithmetic written out
 3. What was given up, and why it lost
 4. What would change the decision
-5. **What you need to do** — exact trades, exact Trading Note text
+5. **What you need to do** — exact trades, and the facts each Trading Note must
+   contain. **We write the notes** — they are submitted word for word later.
 6. The one-sentence version for a judge
 
 The Team Leader reads each brief, explains it to the team, and can veto. If any

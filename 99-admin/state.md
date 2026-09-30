@@ -28,8 +28,8 @@ Deadlines are 5:00 p.m. ET = 11:00 p.m. in France. Aim to finish 24 hours early.
 | By | What | Why then |
 |---|---|---|
 | **1 Oct** | Q1 answered: exact list of the relevant WInS instruments. Treasury curve refreshed to the latest date. | Everything structural depends on it |
-| **6 Oct** | **Q2 + Q3 decided** (thesis and how much to lock in), full Tier 3 protocol. Brief to the Team Leader. | Trades have to start in the first half of October |
-| **9 Oct** | First trades specified (exact orders + exact Trading Note text) and entered by the humans. **Roster due** (humans). | Trades for the 23 Oct analysis must already exist, with notes, before we pick three |
+| **1 Oct** | **Q2 + Q3 decided** (thesis and how much to lock in), full Tier 3 protocol. Brief to the Team Leader. *(Brought forward from 6 Oct on 30 Sep — more executed trades = more Trading Notes to choose from, and a week of slack before the IPS.)* | Trades have to start this week |
+| **2 Oct** | First trades specified (exact orders + the facts each note must contain); **team writes the notes**; `rules-auditor` checks; team enters after 15:30 French time. Roster already submitted 29 Sep. | Trades for the 23 Oct analysis must already exist, with notes, before we pick three |
 | **16 Oct** | Q4, Q5, Q7 decided; remaining core trades placed. Q9: shortlist of Trading Notes and reflection outlines to the students. | Students need a week to write the reflections |
 | **23 Oct** | **Trading Notes Analysis due** (students submit) | — |
 | **27 Oct** | IPS decision framework final; outline to the students; `judge-panel` + `rules-auditor` pass | Students need ~10 days to write 550 words well |

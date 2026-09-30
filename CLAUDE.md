@@ -30,7 +30,8 @@ Some things only the students can do. Everything else is yours.
 
 | The humans | Why only they can |
 |---|---|
-| Enter trades and Trading Notes in WInS (the competition's trading simulator) | It is the team's account. You write the exact order and the exact note; they enter it — or give you browser access and you do it with them watching. |
+| Enter trades in WInS (the competition's trading simulator) | It is the team's account. You write the exact order; they enter it — or give you browser access and you do it with them watching. |
+| **Write the Trading Notes** | Notes are copied word for word into the Trading Notes Analysis, so they are submitted text. You give the facts the note must contain (instrument, its job, the benefit, the risk it accepts, the link to the strategy); the students write the sentences; `rules-auditor` checks them before the trade. |
 | Write every word that gets submitted (IPS, Trading Notes Analysis, Final Report) | Competition rule — see "The integrity line" below |
 | Present at semifinals / finale | Only students present |
 | Roster, school letter, SurveyMonkey Apply submissions | Admin only the Team Leader can do |
@@ -158,6 +159,6 @@ to someone who has never heard of the competition? If not, rewrite it. Use the
    arithmetic written out.
 3. **What we gave up** — the strongest argument against, and why it lost.
 4. **What would change my mind** — the trigger.
-5. **What I need from you** — trades to enter, notes to paste, things to check
-   in WInS. Exact text, exact tickers, exact quantities.
+5. **What I need from you** — trades to enter, the facts each Trading Note
+   must contain (you write the note), things to check in WInS. Exact text, exact tickers, exact quantities.
 6. **Say it in one sentence** — the version for a judge.
