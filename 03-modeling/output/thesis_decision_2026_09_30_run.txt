@@ -1,0 +1,96 @@
+======================================================================================
+PART 1  Cost today (30 Sep 2026) of locking in all ten $50,000 payments
+======================================================================================
+Par curve 29 Sep 2026 (treasury.gov): 1y 4.58%, 2y 4.89%, 3y 4.98%, 5y 5.06%, 7y 5.16%, 10y 5.26%, 20y 5.64%, 30y 5.59%
+
+  Payment      Years away  Spot yield  Discount factor   Cost today
+  1 Jan 2033         6.26       5.21%           0.7278      $36,390
+  1 Jan 2034         7.26       5.26%           0.6893      $34,465
+  1 Jan 2035         8.25       5.30%           0.6529      $32,644
+  1 Jan 2036         9.25       5.34%           0.6179      $30,894
+  1 Jan 2037        10.26       5.38%           0.5841      $29,203
+  1 Jan 2038        11.26       5.43%           0.5514      $27,570
+  1 Jan 2039        12.25       5.48%           0.5200      $26,000
+  1 Jan 2040        13.25       5.53%           0.4898      $24,491
+  1 Jan 2041        14.26       5.59%           0.4608      $23,040
+  1 Jan 2042        15.26       5.64%           0.4330      $21,651
+  TOTAL (curve)                                            $286,348
+  Same cost moved to 1 Jan 2027 (Laura's first money arrives): $289,510
+  For comparison: 15 Sep 2026 curve gave $301,264 at 1 Jan 2027 (laura_core_model.py)
+
+  With the exact WInS instruments (buy prices, whole bonds, commissions): $308,913
+    T-bonds $241,788 + iBonds funds $66,990 + commissions $135; left over after the last payment $3,921 (rounding buffer)
+  Ladder we buy - every bill from 2034 has its own bond/fund paying >= 70% of it: $310,216  (extra vs cheapest: $1,302; left over after 2042: $4,488)
+  THE PLAN'S LADDER (bought 1 Jan 2027, sized for $51,000/yr = 2% buffer): $319,892 = 106.6% of Laura's first $300,000
+  If rates fall before 1 Jan 2027 (whole curve shifted, same % friction):
+    -1.0 points: ladder ~$353,360  -> money left for growth ~$96,640 (was $130,108)
+    -0.5 points: ladder ~$336,158  -> money left for growth ~$113,842 (was $130,108)
+    +0.5 points: ladder ~$304,507  -> money left for growth ~$145,493 (was $130,108)
+
+  How each bill is paid (full scale, $):
+    1 Jan 2033: cash arriving in the 12 months before    $69,739   running surplus after paying   $19,739
+    1 Jan 2034: cash arriving in the 12 months before    $46,017   running surplus after paying   $15,756
+    1 Jan 2035: cash arriving in the 12 months before    $46,015   running surplus after paying   $11,771
+    1 Jan 2036: cash arriving in the 12 months before    $46,008   running surplus after paying    $7,779
+    1 Jan 2037: cash arriving in the 12 months before    $45,212   running surplus after paying    $2,991
+    1 Jan 2038: cash arriving in the 12 months before    $49,451   running surplus after paying    $2,443
+    1 Jan 2039: cash arriving in the 12 months before    $50,488   running surplus after paying    $2,930
+    1 Jan 2040: cash arriving in the 12 months before    $50,498   running surplus after paying    $3,428
+    1 Jan 2041: cash arriving in the 12 months before    $50,529   running surplus after paying    $3,956
+    1 Jan 2042: cash arriving in the 12 months before    $50,531   running surplus after paying    $4,488
+
+======================================================================================
+PART 2  WInS order list - the plan at 2/3 scale (each payment $33,333)
+======================================================================================
+  Funds payment  Instrument                                  Quantity    Est. cost
+  1 Jan 2033     IBTM (Stocks/ETFs page)                     0 shares           $0
+  1 Jan 2034     IBTO (Stocks/ETFs page)                   743 shares      $17,104
+  1 Jan 2035     IBTP (Stocks/ETFs page)                   682 shares      $16,436
+  1 Jan 2036     IBTQ (Stocks/ETFs page)                   668 shares      $15,832
+  1 Jan 2037     T-BOND 4.500% 15-Feb-2036               $24,000 face      $22,965
+  1 Jan 2038     T-BOND 4.750% 15-Feb-2037               $29,000 face      $28,098
+  1 Jan 2039     T-BOND 4.500% 15-May-2038               $30,000 face      $28,500
+  1 Jan 2040     T-BOND 4.375% 15-Nov-2039               $31,000 face      $28,501
+  1 Jan 2041     T-BOND 4.250% 15-Nov-2040               $32,000 face      $28,695
+  1 Jan 2042     T-BOND 3.125% 15-Nov-2041               $33,000 face      $25,255
+  Commissions ($10 per bond trade, $25 per ETF trade; 9 trades)               $135
+  TOTAL LADDER                                                            $211,521
+  Left for the growth sleeve (of $300,000)                                 $88,479
+  (T-bond face assumes WInS bonds trade in $1,000 units - CHECK the 'Estimated
+   Order' figure in WInS matches the cost column before submitting.)
+
+======================================================================================
+PART 3  Laura's real money - strategies compared on the strictest basis for S1
+======================================================================================
+  S1 ladder, real cost moved to 1 Jan 2027: $319,892 | forward rate for buying in 2031: 5.66%, in 2033: 5.78% | 2-yr rate implied for 2031: 5.43%
+  Smooth-curve cost at 1 Jan 2027: $289,510; real ladder is 10.5% more - every strategy's bond purchases are charged the same %.
+  Every strategy uses the same 2031 promise lock (75% of growth money into 2-year Treasuries), except S4.
+
+  Stock assumption: LOW  (arithmetic mean 4.5%, volatility 16%)
+    Strategy                             All 10 paid   Gift p5    median       p95  2031 floor p5  floor median  floor<$100k
+    S1 lock all 2027, 100% stocks            100.00%  $100,802  $157,024  $244,711        $76,661      $118,464        26.0%
+    S1 lock all 2027, 60/40                  100.00%  $123,253  $161,222  $213,093        $93,234      $121,481        11.4%
+    S2 lock half 2027, rest 2031              99.91%   $65,662  $153,980  $269,087        $49,477      $115,995        35.8%
+    S3 lock all in 2031                       93.96%        $0  $144,491  $347,492             $0      $108,843        45.6%
+    S4 lock nothing until 2033                88.29%        $0  $131,524  $384,970             $0            $0         nan%
+
+  Stock assumption: CENTRAL  (arithmetic mean 6.5%, volatility 16%)
+    Strategy                             All 10 paid   Gift p5    median       p95  2031 floor p5  floor median  floor<$100k
+    S1 lock all 2027, 100% stocks            100.00%  $108,691  $168,011  $259,786        $81,911      $125,562        19.0%
+    S1 lock all 2027, 60/40                  100.00%  $128,642  $167,845  $221,171        $96,772      $125,759         7.5%
+    S2 lock half 2027, rest 2031              99.96%   $77,490  $168,696  $287,540        $58,075      $126,372        27.6%
+    S3 lock all in 2031                       96.34%   $12,724  $170,397  $380,499         $9,503      $127,675        36.4%
+    S4 lock nothing until 2033                93.37%        $0  $169,718  $436,408             $0            $0         nan%
+
+  Stock assumption: HIGH  (arithmetic mean 9.5%, volatility 16%)
+    Strategy                             All 10 paid   Gift p5    median       p95  2031 floor p5  floor median  floor<$100k
+    S1 lock all 2027, 100% stocks            100.00%  $121,422  $185,589  $283,768        $90,218      $136,726        10.8%
+    S1 lock all 2027, 60/40                  100.00%  $137,087  $178,176  $233,730       $102,251      $132,361         3.7%
+    S2 lock half 2027, rest 2031              99.99%   $96,193  $191,841  $316,429        $71,450      $142,494        17.2%
+    S3 lock all in 2031                       98.52%   $45,087  $211,336  $432,608        $33,540      $156,991        23.8%
+    S4 lock nothing until 2033                97.62%   $33,094  $231,057  $518,876             $0            $0         nan%
+
+======================================================================================
+STRESS  Stocks fall 35% in 2032 (after the 2031 promise), central otherwise
+======================================================================================
+  S1 (100% stocks + promise lock): median gift $168,011 -> ~$151,531; the promised floor ($125,562 median) is untouched

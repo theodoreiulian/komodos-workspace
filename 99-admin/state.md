@@ -3,23 +3,25 @@
 Read this at the start of every session and update it at the end. It is the
 handoff between sessions.
 
-**Last updated:** 2026-09-29 (repo restructured; Claude takes over as lead strategist)
+**Last updated:** 2026-09-30 (thesis decided; session pack for the team; Friday trades specified)
 
 ---
 
 ## Where things stand
 
-- **Official trading opened 28 Sep.** Nothing has been traded. The window closes
-  6 Nov.
-- **No strategy decisions are in force.** All earlier team decisions were
-  cancelled on 29 Sep. The research base is intact: `01-research/`,
-  `03-modeling/`.
-- **The WInS practice window (15–25 Sep) has closed.** We don't know whether
-  anyone checked which instruments WInS lists (Q1). This is now the most urgent
-  unknown — it decides whether a matched Treasury ladder can be built at all.
-- Existing model numbers use simplified random returns (i.i.d. lognormal — each
-  year drawn independently from one bell-shaped curve) and the 15 Sep 2026 yield
-  curve. Good enough to choose a direction, **not good enough to publish**.
+- **Thesis decided 30 Sep (Q2/Q3):** lock in all ten payments at the start
+  (Promise Portfolio: ladder of T-bonds + IBTO/IBTP/IBTQ); the rest is the Gift
+  Portfolio; the 2031 promise-lock principle is adopted. Brief:
+  `06-team/briefings/2026-09-30-lock-in-the-promise.md`.
+- **Nothing traded yet.** Friday 2 Oct: 9 Promise Portfolio purchases (~$211.5k,
+  ⅔ scale). The remaining ~$88.5k stays cash until Q4.
+- **Team session 30 Sep:** pack in `06-team/sessions/2026-09-30-session.md`
+  (P1, P2 case reading, P5 brief questions, handing out P3/P4/P6/P7).
+- The model is `03-modeling/src/thesis_decision_2026_09_30.py`. Known limits:
+  i.i.d. lognormal returns (thin tails), independent rates and stocks, and 0%
+  idle cash (deliberately cautious).
+- The browser extension disconnected on 30 Sep; WInS prices are not yet
+  re-checked live.
 
 ## Critical path
 
@@ -39,12 +41,18 @@ Deadlines are 5:00 p.m. ET = 11:00 p.m. in France. Aim to finish 24 hours early.
 
 ## Next three things I will do
 
-1. ✅ Q1 answered 29 Sep. Next: re-check iBonds bid/ask during US market hours.
-2. Refresh the Treasury curve and re-price the ladder at today's yields
-   (`quant-modeler`).
-3. Start the Q2 Tier 3 protocol: reopen the thesis from scratch — structural vs
-   statistical vs mixed — with two independent `red-team` passes (one arguing "too
-   cautious", one arguing "too risky").
+1. **After the session:** read `06-team/reading-laura/*` and
+   `06-team/questions-2026-09-30.md`; answer every open question; feed their
+   reading of Laura into Q4.
+2. **Fri 2 Oct morning:** re-price the ladder with live WInS prices (browser),
+   confirm bond units and the note-length limit, re-issue §5 of the brief, and run
+   `rules-auditor` on the team's note drafts by 14:00.
+3. **Q4 by 7 Oct:** Gift Portfolio contents and risk, and what makes it Laura's
+   (Angle A test: does her creative/AI exposure change a holding?). Full Tier 3,
+   with researcher + quant + red team.
+
+Also: update `01-research/market-context/macro-snapshot-2026-09.md` (the Fed
+hiked to 3.75–4.00% on 16–17 Sep; the snapshot is stale).
 
 ## Waiting on the humans
 
@@ -55,15 +63,14 @@ Deadlines are 5:00 p.m. ET = 11:00 p.m. in France. Aim to finish 24 hours early.
 | # | What | Who | Needed by |
 |---|---|---|---|
 | H4 | School letter — see `06-team/punchlist.md` P1 | Team Leader | ask 30 Sep |
+| H5 | Session tasks P2, P5 (30 Sep); Trading Note drafts P3 (Fri 12:00); enter trades after 15:30 Fri | Team | see punchlist |
 
 ## Coverage of the five judging criteria
 
-Check weekly. A criterion nobody has worked on is the priority.
-
 | Criterion | State |
 |---|---|
-| 1 Investment strategy | No thesis in force. Candidates researched. |
-| 2 Client knowledge | Client brief done; Laura-specific angle (A) untested |
-| 3 Portfolio analysis | First-pass models exist; upgrades needed (Q8) |
-| 4 Competition experience | Decision log restarted; AI-use log started |
-| 5 Creativity & presentation | Not started; co-sponsor communication is graded here |
+| 1 Investment strategy | Thesis decided (lock the promise, grow the rest, lock the 2031 promise). Gift Portfolio still open. |
+| 2 Client knowledge | **Weakest (judge panel 5/10).** Q4 must make the Gift Portfolio Laura's. Team's P2 readings feed in. |
+| 3 Portfolio analysis | Ladder optimisation + 4-strategy Monte Carlo done; still to do: fat tails / historical replay, rate–stock correlation |
+| 4 Competition experience | Decision log with red-team reversals is good material; team journals (P6) started |
+| 5 Creativity & presentation | The promise lock is the memorable idea; co-sponsor communication (P7 examples) started |

@@ -1,9 +1,12 @@
 # Strategy
 
-**No thesis is in force.** Every earlier decision was cancelled on 29 Sep 2026.
-Claude, as lead strategist, is re-deciding the thesis from scratch under the
-Tier 3 protocol in `../99-admin/playbook.md`. Target date: 6 Oct (see
-`../99-admin/state.md`).
+**Thesis in force (decided 30 Sep 2026):** lock in all ten payments at the start
+with a Treasury ladder (the **Promise Portfolio**); invest the rest for growth
+(the **Gift Portfolio**); in Jan 2031 lock the bottom of the co-sponsor range
+too (the **promise lock**). Decision: `../99-admin/decision-log.md` (30 Sep).
+Plain-language brief: `../06-team/briefings/2026-09-30-lock-in-the-promise.md`.
+Still open: Gift Portfolio contents (Q4, 7 Oct); glidepath and lock size (Q5/Q6,
+16 Oct).
 
 Evidence to decide from: `../01-research/` (especially
 `differentiation-angles.md`) and `../03-modeling/`. Open questions:

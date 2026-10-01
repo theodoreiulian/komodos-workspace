@@ -10,6 +10,8 @@ source. No orphan numbers.
 | `output/core_model_run.txt` | Saved output of the current run |
 | `src/barbell_comparison.py` | Locking in the whole promise with a ladder + a growth sleeve vs. one balanced portfolio |
 | `output/barbell_comparison_run.txt` | Saved output |
+| `src/thesis_decision_2026_09_30.py` | **Current.** Cost of locking in the promise (curve + real WInS instruments, via a linear programme), the ⅔-scale WInS order list, and 4 strategies × 3 stock scenarios. Needs numpy + scipy. |
+| `output/thesis_decision_2026_09_30_run.txt` | Saved output, 29 Sep 2026 prices |
 
 ## `laura_core_model.py`
 
