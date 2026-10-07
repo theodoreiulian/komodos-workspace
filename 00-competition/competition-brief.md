@@ -56,9 +56,29 @@ reaches the finale. The filter is written quality, not returns.
 ## 3. Team and eligibility rules
 
 - 4–6 students, grades 9–12, **all from the same school**. Falling below 4 or
-  exceeding 6 = disqualification. We are 4 — we have **zero slack**. If one
-  member leaves after the roster locks on 9 October we are at the minimum and
-  another departure ends our run.
+  exceeding 6 = disqualification. High school students are described as
+  "between the ages of 14 and 18 at the start" of the competition, and nobody
+  may already hold a secondary-school diploma.
+- **We are 5 since 7 Oct 2026** (Marc joined, born 2011, so 14 or 15 on 28 Sep
+  2026 — inside the age range). One member of slack: we can lose one and stay
+  valid.
+- **Adding and removing members** (Rules & Roles page, rules 8–10, read 7 Oct
+  2026, quoted word for word):
+  - "Teams may add or remove members, and students may change teams, until the
+    official team roster is submitted."
+  - "After the official team roster is submitted, teams may not add members.
+    Requests to remove a team member due to extenuating circumstances must be
+    submitted in writing by the Advisor and approved by the Investment
+    Competition team. Teams that remove a member without prior approval will be
+    disqualified."
+  - "Teams that fall below four members or exceed six members at any time
+    during the Competition will be disqualified."
+  **How this applies to us:** Wharton's own confirmation email for our 29 Sep
+  roster says "You can edit your team information by returning to
+  https://wghsinvcomp.smapply.us/ until 5:00 p.m. ET on October 9, 2026." So
+  the roster only becomes final at the 9 Oct deadline, and adding Marc on 7 Oct
+  is inside the window. Email saved in `99-admin/roster-confirmation-email.md`.
+  After 9 Oct, 5:00 p.m. ET, rule 9 bites: no additions at all.
 - Student **team leader must be ≥ 16 on 28 September 2026** and is the single
   point of contact and submitter. Changing the leader after 28 Sep needs approval.
 - One teacher/educator advisor from our school. The advisor **may not make

@@ -3,11 +3,22 @@
 Read this at the start of every session and update it at the end. It is the
 handoff between sessions.
 
-**Last updated:** 2026-09-30 (thesis decided; session pack for the team; Friday trades specified)
+**Last updated:** 2026-10-07 (roster only: Marc joined as 5th member; everything else below is as of 30 Sep and not re-checked in this session)
 
 ---
 
 ## Where things stand
+
+- **Team is five since 7 Oct.** Marc (born 2011) was added to the roster in
+  SurveyMonkey Apply and the roster re-submitted by the Team Leader. Size and
+  age rules are met (4–6 members; 14–18 at the start). Rule 9 ("After the official team roster is submitted, teams may not
+  add members") does not block this: Wharton's 29 Sep confirmation email says
+  the roster can be edited until 9 Oct, 5:00 p.m. ET
+  (`99-admin/roster-confirmation-email.md`). I first asked for an email to
+  Wharton; withdrawn the same day on that evidence. The Team Leader checked the platform on 7 Oct: roster confirmed
+  with five members (no screenshot kept). After 9 Oct nobody can be
+  added. Rule text: `00-competition/competition-brief.md` §3.
+- Marc's catch-up plan: `06-team/onboarding-marc.md` (punchlist P9).
 
 - **Thesis decided 30 Sep (Q2/Q3):** lock in all ten payments at the start
   (Promise Portfolio: ladder of T-bonds + IBTO/IBTP/IBTQ); the rest is the Gift
@@ -56,13 +67,15 @@ hiked to 3.75–4.00% on 16–17 Sep; the snapshot is stale).
 
 ## Waiting on the humans
 
+*Done: H6 — five-member roster confirmed on the platform by the Team Leader (7 Oct).*
 *Done: H3 — Team Leader confirmed aged 17 on 28 Sep 2026 (29 Sep). H2 — roster submitted (29 Sep).*
 *Done: H1/Q1 — Claude checked WInS directly (29 Sep). Full ladder 2033–2042 is buildable: iBonds IBTM/IBTO/IBTP/IBTQ for the 2033–36 payments, T-BONDs for 2037–42. See `04-portfolio/wins-instruments.md`. Claude has browser access to the StockTrak account via Claude in Chrome (read-only use unless a trade is agreed).*
 *Known: WInS is StockTrak (app.stocktrak.com); account Komodos-10427064; 0/200 trades as of 29 Sep.*
 
 | # | What | Who | Needed by |
 |---|---|---|---|
-| H4 | School letter — see `06-team/punchlist.md` P1 | Team Leader | ask 30 Sep |
+| H4 | School letter — see `06-team/punchlist.md` P1. **Must now list five students, including Marc** | Team Leader | ask 30 Sep |
+| H7 | P9: Marc works through `06-team/onboarding-marc.md` | Marc + one teammate | Sun 11 Oct |
 | H5 | Session tasks P2, P5 (30 Sep); Trading Note drafts P3 (Fri 12:00); enter trades after 15:30 Fri | Team | see punchlist |
 
 ## Coverage of the five judging criteria

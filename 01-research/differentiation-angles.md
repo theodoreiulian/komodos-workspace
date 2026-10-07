@@ -368,7 +368,7 @@ scoreboard — which does not matter for scoring, but will test our nerve.
 ## Angle F — Our actual vantage point
 
 ### Thesis
-We are four students at the American Section of the Lycée International de
+We are five students at the American Section of the Lycée International de
 Saint-Germain-en-Laye: bilingual, in the euro area, trading a US market that
 opens at 15:30 our time, with **French, German, Italian and Dutch sovereigns in
 our permitted bond universe** alongside Treasuries.
