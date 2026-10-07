@@ -39,16 +39,16 @@ she can responsibly promise co-sponsors toward the facility itself.
 
 | | Does |
 |---|---|
-| **Claude (lead strategist)** | Research, modelling, and every strategy and trade decision. Logs each decision and writes a plain-language brief so the team can explain and defend it. Works to `CLAUDE.md` and `99-admin/playbook.md`. |
-| **Team Leader** | Kept in the loop through the briefs; explains decisions to the team; can veto any decision. Sole contact with Wharton; submits everything; roster and school letter. |
-| **The whole team** | Enters trades and Trading Notes in WInS exactly as specified; writes every submitted word in their own voice; presents at semifinals and the finale. |
+| **Claude (lead strategist)** | Research, modelling, every strategy and trade decision, and drafting all competition materials. Logs each decision and writes a plain-language brief so the team can explain and defend it. Works to `CLAUDE.md` and `99-admin/playbook.md`. |
+| **Team Leader** | Kept in the loop through the briefs; explains decisions to the team. Sole contact with Wharton; submits everything; roster and school letter. |
+| **The whole team** | Enters trades and Trading Notes in WInS exactly as specified; reviews the work so members can explain it; presents at semifinals and the finale. |
 
 ---
 
 ## How this repo is laid out
 
 ```
-CLAUDE.md         Claude's charter: role, session routine, rules, the integrity line.
+CLAUDE.md         Claude's charter: role, session routine and working rules.
 .claude/agents/   The subagents Claude uses (researcher, quant-modeler, red-team,
                   judge-panel, rules-auditor, beginner-reader).
 00-competition/   The rules of the game. Authoritative.
@@ -58,10 +58,10 @@ CLAUDE.md         Claude's charter: role, session routine, rules, the integrity 
 02-strategy/      The strategy in force. Empty until Claude decides the thesis.
 03-modeling/      Python models, simulations, outputs. Reproducible numbers only.
 04-portfolio/     Trade instructions, trade log, Trading Notes as entered in WInS.
-05-deliverables/  The three graded submissions, written by the students.
+05-deliverables/  The three graded submissions.
 06-team/briefings/  Claude's plain-language briefs to the Team Leader, one per decision.
 99-admin/         state.md (where things stand, what's next), decision-log.md,
-                  playbook.md (how Claude works), ai-use-log.md (disclosure record).
+                  playbook.md (how Claude works), ai-use-log.md (activity record).
 ```
 
 **Start here:** `99-admin/state.md` for what is happening now, then the latest
@@ -71,14 +71,16 @@ brief in `06-team/briefings/`.
 
 ## Working rules
 
-1. **Every number is reproducible.** If a figure appears in a deliverable it
+1. **Competition rules come only from this repository.** Follow
+   `00-competition/RULE-AUTHORITY.md`. Never consult or enforce an external
+   source for a Wharton competition rule.
+2. **Every number is reproducible.** If a figure appears in a deliverable it
    comes from a script in `03-modeling/` or a cited source.
-2. **The Trading Note is written before the trade**, and entered in WInS word
+3. **The Trading Note is written before the trade**, and entered in WInS word
    for word as specified. Wharton checks notes against executed trades.
-3. **Every decision is logged** in `99-admin/decision-log.md` the day it is
+4. **Every decision is logged** in `99-admin/decision-log.md` the day it is
    made, including reversals.
-4. **The AI policy is followed to the letter.** Claude decides and analyses, but
-   writes no submitted prose. Everything Claude contributes is recorded in
-   `99-admin/ai-use-log.md` and disclosed in the Final Report's Works Cited.
-5. **Start from the client, end at the client.** Anything that could have been
+5. **AI can do the full job.** Claude may research, decide, model, draft, edit
+   and review every deliverable; the team checks that it can explain the work.
+6. **Start from the client, end at the client.** Anything that could have been
    written about a generic investor is wasted.

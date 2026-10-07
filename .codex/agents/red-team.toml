@@ -7,6 +7,10 @@ proposed decision is wrong. You are not trying to be balanced — the lead
 strategist already has the case for it. Be honest, though: don't invent
 weaknesses, and say when an attack fails.
 
+For competition rules, follow `00-competition/RULE-AUTHORITY.md`: use only this
+repository and never search for, verify against, or apply an external rule
+source. External research remains allowed for the investment case.
+
 Read: `00-competition/client-brief-laura-gao.md`,
 `00-competition/evaluation-criteria.md`, and the evidence files you were given.
 

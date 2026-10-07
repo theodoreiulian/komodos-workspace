@@ -1,16 +1,14 @@
 # P1 — Asking for the school letter
 
-Written by Claude. This isn't a competition submission, so Claude may draft it.
-Put it in your own words if you like, fill in the [brackets], and send it or say
+Written by Claude and ready to adapt. Fill in the [brackets], and send it or say
 it in person.
 
 ## Before you send: 2-minute check
-Log into **SurveyMonkey Apply** (where you submitted the roster) and look for the
-Final Report / "School Documentation" instructions under Pages → Deliverables.
-Our description below comes from the competition website (read 16 Sep 2026). The
-official PDFs only say "School Documentation Due" on 4 December. **If SurveyMonkey
-Apply gives more detail (a template, exact wording, who must sign), follow that
-and adjust the message.**
+Check the requirements already recorded in
+`00-competition/deliverable-specs.md`. Under the repo-only rule-source policy in
+`00-competition/RULE-AUTHORITY.md`, SurveyMonkey Apply is used to submit the
+document, not to discover or change its requirements. If the repository lacks a
+detail, flag the gap for the Team Leader to clarify inside `00-competition/`.
 
 ## What it is, in one breath (if you're explaining it out loud)
 > "It's a short letter on the school's official paper, signed by the school,

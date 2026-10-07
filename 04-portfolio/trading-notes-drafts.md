@@ -1,8 +1,7 @@
-# Trading Note drafts (written by the team)
+# Trading Note drafts
 
-Drafts for Friday 2 Oct. One section per trade. The author writes it in their
-own words. Claude's `rules-auditor` checks the drafts for the five parts and the
-rules; it does not rewrite them.
+Drafts for Friday 2 Oct. One section per trade. Claude may draft and revise each
+note. `rules-auditor` checks the drafts for the five parts and the rules.
 
 Checklist per note: (1) what; (2) its role, i.e. which payment it pays; (3) the
 research or analysis behind it; (4) the risk it accepts; (5) how it fits the

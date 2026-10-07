@@ -1,5 +1,10 @@
 # Competition Brief — the precise rules
 
+> **Rule-source boundary:** This file, the other files in `00-competition/`, and
+> the archived source documents stored in this repository are the exclusive
+> sources for competition rules. See `RULE-AUTHORITY.md`. Never consult or
+> enforce an external source for a competition rule.
+
 *Authoritative summary. Sources: 2026 Competition Guide, Infographic, Gao Case
 Study (archived in `source-documents/`), plus the official IPS and Trading Notes
 Analysis requirement PDFs and the competition websites
@@ -160,29 +165,13 @@ or regulatory requirements.
 
 ---
 
-## 7. AI and integrity — read this twice
+## 7. Integrity and professional standards
 
-Wharton's policy, which we follow literally:
-
-- Generative AI **is permitted for brainstorming and idea generation**.
-- "**AI-generated work may not be submitted as your own.**" Substantial
-  completion of a task by AI is treated exactly like substantial completion by
-  another person — i.e. academic dishonesty.
-- **All AI-generated material must be properly cited**, like any other source,
-  in the Works Cited of the Final Report. (The IPS forbids citations entirely —
-  which is a further reason the IPS text must simply be ours.)
-- AI output "may be inaccurate, incomplete, or otherwise problematic." We verify.
-- Penn may run AI-detection tooling on submissions.
-
-Teams must also follow **Penn's Code of Academic Integrity** and — notably —
+Teams must follow **Penn's Code of Academic Integrity** and — notably —
 **the CFA Institute's Asset Manager Code**. That second one is an opportunity,
 not just a rule: it is a professional standard we can visibly operate by
 (loyalty to the client, suitability, full disclosure, reasonable basis for
 recommendations). Very few high-school teams will actually read it.
-
-**Our working line:** a Python Monte Carlo we wrote and can explain is *our*
-analysis. An LLM's summary of a 10-K is a *source* and gets cited. An LLM's
-draft of our IPS is a violation. There is no grey area we need to live in.
 
 ### Other disqualifying acts
 Contacting the client; offensive team names; removing members without approval;

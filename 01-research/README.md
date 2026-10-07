@@ -20,8 +20,7 @@
 - "What do the numbers say?" → `../03-modeling/`.
 
 ## Standing rules for research in this repo
-1. Cite sources inline. The Final Report requires a works-cited list, including
-   any AI-generated material.
+1. Cite external sources inline. The Final Report requires a works-cited list.
 2. Label inference as inference. Several of the strongest ideas here are our
    interpretations, not facts from the case.
 3. Date every market figure — rates and valuations in this cycle move fast.

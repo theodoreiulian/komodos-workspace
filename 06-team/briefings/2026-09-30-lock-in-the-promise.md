@@ -305,8 +305,7 @@ to the Gift Portfolio.
 > from day one, so the markets can only decide how big the building gift is,
 > never whether the residency can pay its bills.*
 
-*(This is Claude's summary for you to understand and repeat. The IPS pitch must
-be written by us, in our own words.)*
+*(This sentence may be reused or adapted when Claude drafts the IPS pitch.)*
 
 ---
 

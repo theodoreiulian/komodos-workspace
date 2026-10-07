@@ -19,8 +19,8 @@ Evidence to decide from: `../01-research/` (especially
 - `glidepath.md` — the rule for how the mix changes before and after 2033
 - `facility-contribution.md` — the recommended gift and the co-sponsor range
 
-These are working documents that record decisions and reasoning. They are
-**not** submission text — the students write that.
+These are working documents that record decisions and reasoning. They may also
+be used to develop submission text.
 
 ## The test any strategy must pass
 1. Can it be said in one sentence a judge would repeat back?

@@ -8,6 +8,15 @@ it uses subagents.
 These patterns are **not** instructions for how the students should work. They
 describe the kind of work that wins, and Claude is the one doing the work.
 
+## Non-negotiable rule-source boundary
+
+For competition rules, every agent uses only the contents of this repository
+and follows `00-competition/RULE-AUTHORITY.md`. No agent may search for, verify
+against, cite, or enforce a competition rule from an external source. If the
+repository is silent or ambiguous, escalate the gap to the Team Leader; do not
+browse for the answer. This restriction does not apply to market, security,
+issuer, economic or academic research.
+
 ---
 
 ## Part 1 — What winners share, and what it means for how I work
@@ -38,11 +47,11 @@ Project subagents are defined in `.claude/agents/`. Each has one job.
 
 | Agent | Job | When to use it |
 |---|---|---|
-| `researcher` | Deep, sourced research on one question. Returns facts with dates and links, clearly separated from its own conclusions. | Any factual question outside the repo: markets, instruments, academic work, what WInS lists, precedent. |
+| `researcher` | Deep, sourced research on one question. Returns facts with dates and links, clearly separated from its own conclusions. | Factual questions outside the repo about markets, instruments, academic work, what WInS lists and precedent — never competition rules. |
 | `quant-modeler` | Builds or changes a script in `03-modeling/`, runs it, saves the output, and says which decision the numbers support. | Any number that will drive a decision or appear in a deliverable. |
 | `red-team` | Makes the strongest honest case **against** a proposed decision. It gets the proposal and the evidence, not my reasoning for it. | Before logging every Tier 2 or Tier 3 decision (see Part 3). |
 | `judge-panel` | Reads a position as competition judges would, scores it against the five criteria, and compares it with a typical submission. | Before locking the thesis, the IPS outline, the Trading Note shortlist and the Final Report structure. |
-| `rules-auditor` | Checks a trade, note or deliverable outline against the competition rules and the AI policy. | Before any trade instruction goes to the humans; before any submission. |
+| `rules-auditor` | Checks a trade, note or deliverable outline against the competition rules and deliverable specifications. | Before any trade instruction goes to the humans; before any submission. |
 | `beginner-reader` | Reads a brief as a 16-year-old with no finance background and lists every undefined term, missing step and unclear number. | Every brief in `06-team/briefings/` that explains a Tier 2 or Tier 3 decision. |
 
 ### Rules for deploying them
@@ -91,7 +100,6 @@ Project subagents are defined in `.claude/agents/`. Each has one job.
    evidence, strongest objection and the answer, the "revisit when" trigger.
 7. **Brief the humans** in `06-team/briefings/`, checked by `beginner-reader`.
    Include the exact actions they need to take.
-8. **Record** the work in `99-admin/ai-use-log.md`.
 
 ### Things that are never Tier 1
 - Anything entering the IPS — frozen on 6 Nov.
@@ -110,5 +118,3 @@ Project subagents are defined in `.claude/agents/`. Each has one job.
 - **Steelmanned.** The best case against sits next to every conclusion.
 - **Aimed at a deliverable.** Name which deliverable and criterion each piece of
   work serves.
-- **On the right side of the integrity line** (`CLAUDE.md`): analysis, decisions,
-  numbers and outlines — never submission prose.
