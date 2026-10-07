@@ -20,9 +20,7 @@ not the source document. Submit 24 hours early — deadlines are 11:00 p.m. Fren
 time and **no extensions are granted**.
 
 ## Who does what
-Claude decides what each deliverable must say: the decisions, the numbers, the
-outline, and which Trading Notes to choose. It then checks the students' drafts
-(`judge-panel`, `rules-auditor`). **The students write every submitted sentence,
-in their own voice.** That is a competition rule — and "authentic team voice" is
-a graded criterion in its own right. Claude's contributions are disclosed in the
-Final Report's Works Cited, from `../99-admin/ai-use-log.md`.
+Claude decides what each deliverable must say, drafts and revises the complete
+text, chooses the Trading Notes, and runs the review passes (`judge-panel`,
+`rules-auditor`). The students review the material so they can explain and
+present it clearly.

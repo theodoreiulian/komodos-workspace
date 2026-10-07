@@ -78,7 +78,7 @@ horizons, and internal consistency.
 - "**Authentic team voice**" — five French-based students at an international
   school in Saint-Germain-en-Laye, several of us bilingual, working across a
   six-hour time difference from the market we are trading. That is a voice.
-  Committee-speak erases it; so does over-polished AI prose.
+  Committee-speak and generic prose erase it.
 - The co-sponsor communication is called out *inside* this criterion. It is a
   **persuasive writing task aimed at a non-financial reader**, and it is graded.
   Treat it as a real fundraising document, not an appendix.

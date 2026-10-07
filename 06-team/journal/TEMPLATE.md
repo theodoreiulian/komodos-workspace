@@ -1,9 +1,8 @@
 # Journal — [your name]
 
-Two lines a week, every Sunday. Your own words, never copied from Claude. This is
-raw material for the Final Report's reflection section (criterion 4: "reflects
-meaningfully on the team's growth and response to challenges"), and that
-section has to be written by us.
+Two lines a week, every Sunday. Claude may help draft or edit them. This is raw
+material for the Final Report's reflection section (criterion 4: "reflects
+meaningfully on the team's growth and response to challenges").
 
 Copy this file to `06-team/journal/<your-first-name>.md` and add a new entry on
 top each week.

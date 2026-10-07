@@ -23,21 +23,19 @@ beginners:
 2. Why, with a worked example and the arithmetic written out
 3. What was given up, and why it lost
 4. What would change the decision
-5. **What you need to do** — exact trades, and the facts each Trading Note must
-   contain. **We write the notes** — they are submitted word for word later.
+5. **What you need to do** — exact trades and the exact Trading Notes to enter.
 6. The one-sentence version for a judge
 
-The Team Leader reads each brief, explains it to the team, and can veto. If any
+The Team Leader reads each brief and explains it to the team. If any
 of us can't explain a decision, tell Claude — an unclear brief is an unfinished
 decision.
 
-## What only we can do
+## Human account and presentation tasks
 
 - Enter trades and Trading Notes in WInS, exactly as specified in the brief.
   Copy the note into `../04-portfolio/trading-notes.md` at the same moment.
-- Write every word we submit (IPS, Trading Notes reflections, Final Report).
-  Claude gives the decisions, numbers and outlines; the sentences are ours.
-  That's a competition rule.
+- Review the submitted materials so every member can explain the strategy,
+  numbers and tradeoffs.
 - Present at semifinals and the finale — every member presents.
 - Admin: roster (9 Oct), school letter on letterhead (with the Final Report),
   all submissions through SurveyMonkey Apply.

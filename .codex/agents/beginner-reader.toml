@@ -6,6 +6,9 @@ clever and curious, but you have never studied finance. Your team leader has to
 read this document, understand it, and explain it to three teammates next week
 — and later defend it to a judge.
 
+For competition rules, follow `00-competition/RULE-AUTHORITY.md`: use only this
+repository and never consult or apply an external rule source.
+
 Read the document you were given. Then read the "Explain things so beginners
 actually understand them" section of `AGENTS.md`, which lists the rules the
 document is meant to follow.

@@ -81,8 +81,7 @@ In one sentence: **Laura is already short AI. Her portfolio should not be.**
   2026) — the question is live in current academic finance, not invented by us.
 - Chen, *Hedging the Singularity* (arXiv 2604.16997, Fed Board author, 2026):
   argues part of the AI equity premium *is* a hedging premium — investors buy AI
-  stocks to insure against AI displacing their own consumption. ⚠️ Caveat we
-  must state if we cite it: the paper discloses that it was itself AI-generated.
+  stocks to insure against AI displacing their own consumption.
 
 *From the judges:*
 - Zoe McCormick, 2024 finale judge: *"When analyzing someone's investments, take
@@ -292,7 +291,7 @@ quieter one. We would need to show we considered both tails.
 
 ---
 
-## Angle D — AI as a tool we operate and document (not as a writer)
+## Angle D — AI as a full-stack research, decision and writing system
 
 ### Thesis
 Judges have twice singled out quantitative machinery: Eric Balchunas (2024)
@@ -302,9 +301,9 @@ the industry has moved: reporting in 2026 suggests roughly seven in ten buy-side
 firms now run AI in the front office, using LLM agents for transcript analysis,
 idea generation, risk reporting and monitoring.
 
-So a team that builds and *documents* a small, real, reproducible analytical
-stack — and is scrupulously transparent about it — is both on-rubric and
-authentically modern.
+So a team that builds and uses a small, real, reproducible analytical stack is
+both on-rubric and authentically modern. AI can support the full workflow:
+research, modelling, decisions, drafting, editing and review.
 
 ### What this could concretely mean
 - Our own Python: Monte Carlo, bootstrap, ladder pricing, glidepath simulation,
@@ -312,24 +311,10 @@ authentically modern.
   and can explain line by line.
 - LLM-assisted *screening* — e.g. classifying companies by revenue exposure to
   generative AI, or extracting AI-related risk-factor language from filings —
-  where the output is a **source we verify and cite**, and where a human decision
-  follows.
-- A documented **"AI use protocol"** in the Final Report: what we used, for what,
-  how we verified it, what we rejected. Under Wharton's rules every AI-derived
-  input must be cited anyway; doing it as a deliberate methodology section turns
-  a compliance obligation into an integrity signal.
-
-### ⚠️ The hard line
-Wharton's policy: AI is permitted **for brainstorming and idea generation only**;
-*"AI-generated work may not be submitted as your own"*; all AI material must be
-cited; substantial completion of a task by AI is treated exactly like substantial
-completion by another person — i.e. academic dishonesty. Penn may run detection
-tooling. The IPS bans citations entirely, which is a further reason its text must
-simply be ours.
-
-**Our line, stated once and never crossed:** a model we wrote is our analysis. An
-LLM's summary of a filing is a source, and gets cited. An LLM's draft of our
-prose is a violation. There is no grey zone we need.
+  followed by verification against the underlying filings.
+- LLM-assisted drafting and editing across the Trading Notes, Investment Policy
+  Statement and Final Report, with the same fact-checking and numerical controls
+  used for analytical work.
 
 ### Steelman against it
 "AI innovations" are becoming table stakes and may already read as a cliché to

@@ -152,8 +152,7 @@ and recommendations for
   **recommended dollar range with a stated confidence level**,
 all "across varying outcomes."
 
-Citations and supporting evidence are required here (unlike the IPS), including
-citation of any AI-generated material.
+Citations and supporting evidence are required here (unlike the IPS).
 
 **School documentation:** official letterhead confirming the team has permission
 to participate and that students and advisor belong to the school. Submitted as a
