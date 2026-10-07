@@ -75,7 +75,7 @@ horizons, and internal consistency.
 > meaningful reflection; and communicates Laura's potential facility contribution
 > and investment uncertainty clearly and credibly to prospective co-sponsors."
 
-- "**Authentic team voice**" — four French-based students at an international
+- "**Authentic team voice**" — five French-based students at an international
   school in Saint-Germain-en-Laye, several of us bilingual, working across a
   six-hour time difference from the market we are trading. That is a voice.
   Committee-speak erases it; so does over-polished AI prose.

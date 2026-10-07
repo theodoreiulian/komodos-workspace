@@ -1,7 +1,7 @@
 # The Komodos — Wharton Global High School Investment Competition 2026–27
 
 Team workspace for **The Komodos**, American Section, Lycée International de
-Saint-Germain-en-Laye, France. Four students + teacher advisor.
+Saint-Germain-en-Laye, France. Five students + teacher advisor.
 
 **Client:** Laura Gao — author, illustrator, entrepreneur (Wharton W'18).
 **The job:** design, implement, articulate and evaluate a long-term investment

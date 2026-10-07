@@ -1,11 +1,17 @@
 # Team
 
 **The Komodos** — American Section, Lycée International de Saint-Germain-en-Laye.
-Four students + teacher advisor. *(Names must match the official roster exactly —
+Five students + teacher advisor (Marc joined on 7 Oct 2026). *(Names must match the official roster exactly —
 First Name, Last Initial on the IPS title page.)*
 
-⚠️ **We are at the minimum team size (4).** Below 4 is disqualification. After
-the roster locks on 9 October, losing one member ends our run.
+**Team size: 5** (the rules allow 4 to 6). Below 4 or above 6 at any time is
+disqualification. With five we can lose one member and still be a valid team;
+with four we could not. A member can only be removed if the advisor asks Wharton
+in writing and Wharton approves.
+
+Marc was added on 7 Oct, inside the editing window Wharton gave us: the
+roster confirmation email says the team information can be edited until
+5:00 p.m. ET on 9 October 2026. After that moment nobody can be added.
 
 ## How decisions reach the team
 

@@ -15,8 +15,13 @@ Required fields:
 - School country, school city (school state for US schools only)
 - Official school website URL
 
-⚠️ Roster locks on submission. Members may not be changed afterwards without
-written advisor approval, and team size must stay within 4–6.
+⚠️ Roster can be edited until the deadline (Wharton's confirmation email says so), then locks. After that no member can be added at all;
+a member can be removed only if the advisor asks in writing and Wharton
+approves. Team size must stay within 4–6. (Exact wording:
+`competition-brief.md` §3.)
+
+*Status: submitted 29 Sep with four members; re-submitted 7 Oct with five
+(Marc added), inside the editing window. Team Leader confirmed on the platform, 7 Oct. Still to match before the IPS: the exact team name in the roster form (Wharton's email says "Team Komodos").*
 
 ---
 

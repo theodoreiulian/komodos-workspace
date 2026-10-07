@@ -119,7 +119,7 @@ Rules you follow, whatever else you are asked:
 ## ⚠️ Explain things so beginners actually understand them
 
 **The humans are high school students, not finance professionals.** Assume no
-prior knowledge. The Team Leader has to explain your decisions to three
+prior knowledge. The Team Leader has to explain your decisions to four
 teammates and defend them to judges. If they cannot follow it, the decision is
 not usable.
 
