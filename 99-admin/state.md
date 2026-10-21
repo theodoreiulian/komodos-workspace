@@ -7,9 +7,8 @@ handoff between sessions.
 
 - **DONE 21 Oct: all 8 Promise Portfolio trades filled** (8/200 used, $85,781.79 cash).
   Notes verified against WInS. Log: `04-portfolio/trade-log.md`, `trading-notes.md`.
-- **NEXT 22 Oct:** fill the SurveyMonkey Apply Trading Notes form from
-  `05-deliverables/01-trading-notes-analysis/draft.md`; Team Leader reads it; submit
-  only on their OK. Deadline 23 Oct 5 p.m. ET.
+- **DONE 22 Oct 00:46 CEST: Trading Notes Analysis submitted** (Team Leader approved;
+  confirmation page shown). Q9 closed.
 - **Then:** Q4 Gift Portfolio (full protocol) → trades before 6 Nov; IPS draft by 27 Oct.
 
 ## 21 Oct: read this first

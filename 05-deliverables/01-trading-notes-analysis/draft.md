@@ -1,6 +1,8 @@
 # Trading Notes Analysis: draft (due Fri 23 Oct 2026, 5:00 p.m. ET)
 
-Status: **final text, ready to submit.** All 8 trades filled on 21 Oct 2026. The three
+Status: **SUBMITTED 22 Oct 2026, 00:46 CEST** via SurveyMonkey Apply (application
+2026-1052791973; task completed 00:45 CEST; "Application Submitted!" confirmation shown).
+The text below is exactly what was submitted. All 8 trades filled on 21 Oct 2026. The three
 notes below were checked by script against WInS > Trading Notes (`/account/tradenotes`)
 and match character for character. Submit Thu 22 Oct via SurveyMonkey Apply.
 

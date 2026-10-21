@@ -186,4 +186,4 @@ Owned by Claude. Priority order and dates live in `99-admin/state.md`.
 | Q6 | Promise lock calibration: how much is locked in 2031, how the range and confidence are stated. Principle decided 30 Sep. **Due 16 Oct** | Final Report, criterion 5 |
 | Q7 | Does Laura's creative income being exposed to AI change a real allocation (Angle A)? If not, drop it. | Whether the thesis is specific to Laura |
 | Q8 | Model upgrades: historical resampling of returns instead of the current simplified random returns; interest rates that move; costs and inflation. | Whether the numbers are publishable |
-| Q9 | Which 3 Trading Notes go in the 23 Oct analysis? Means the trades behind them must be executed well before then. | Trading Notes Analysis |
+| ~~Q9~~ | ✅ **Submitted 22 Oct**: IBTO, IBTQ, T-BOND 3.125% 15-Nov-2041. Was: Which 3 Trading Notes go in the 23 Oct analysis? Means the trades behind them must be executed well before then. | Trading Notes Analysis |
