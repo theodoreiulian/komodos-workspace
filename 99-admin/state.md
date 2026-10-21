@@ -3,7 +3,14 @@
 Read this at the start of every session and update it at the end. It is the
 handoff between sessions.
 
-**Last updated:** 2026-10-21 (Trading Notes Analysis push)
+**Last updated:** 2026-10-21, evening (8 trades filled; analysis final)
+
+- **DONE 21 Oct: all 8 Promise Portfolio trades filled** (8/200 used, $85,781.79 cash).
+  Notes verified against WInS. Log: `04-portfolio/trade-log.md`, `trading-notes.md`.
+- **NEXT 22 Oct:** fill the SurveyMonkey Apply Trading Notes form from
+  `05-deliverables/01-trading-notes-analysis/draft.md`; Team Leader reads it; submit
+  only on their OK. Deadline 23 Oct 5 p.m. ET.
+- **Then:** Q4 Gift Portfolio (full protocol) → trades before 6 Nov; IPS draft by 27 Oct.
 
 ## 21 Oct: read this first
 - **WInS on 21 Oct: 0/200 trades, $300,000 cash. The 2 Oct ladder was never bought.**

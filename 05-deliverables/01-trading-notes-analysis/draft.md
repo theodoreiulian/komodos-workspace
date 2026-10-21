@@ -1,8 +1,8 @@
 # Trading Notes Analysis: draft (due Fri 23 Oct 2026, 5:00 p.m. ET)
 
-Status: **draft, waiting for the trades.** The notes below become final only once
-the trades fill in WInS. After they fill, copy each note **from WInS's
-transaction history** (not from this file) into the form, and check the two match.
+Status: **final text, ready to submit.** All 8 trades filled on 21 Oct 2026. The three
+notes below were checked by script against WInS > Trading Notes (`/account/tradenotes`)
+and match character for character. Submit Thu 22 Oct via SurveyMonkey Apply.
 
 Picked from the 8 Promise Portfolio trades, so that each shows a different part
 of the decision process:
