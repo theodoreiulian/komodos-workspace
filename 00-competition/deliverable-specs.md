@@ -87,7 +87,7 @@ The single most constrained document of the competition.
 | Size | 12-point |
 | Spacing | Double-spaced |
 | Margins | 1 inch, all sides |
-| File | PDF, ≤ 5 MB, via SurveyMonkey Apply |
+| File | ~~PDF, ≤ 5 MB~~ **Changed by the Week 4 email: submitted as a SurveyMonkey Apply form, not a PDF; "all other requirements remain the same".** Whether font/spacing/page rules still bind in a form is open (`week-4-email-2026-10.md`) |
 | **Forbidden** | graphics, charts, images, attachments, external links, footnotes, formal citations |
 
 Sources need not be cited in the IPS; they must appear in the Final Report.
@@ -167,6 +167,6 @@ separate file. ⚠️ Request it from the Lycée in **October**, not late Novemb
 - [ ] WInS username correct
 - [ ] Trading Notes match WInS text character-for-character
 - [ ] No prohibited elements (graphics/citations in the IPS)
-- [ ] File size under 5 MB, file is a PDF
+- [ ] ~~File size under 5 MB, file is a PDF~~ (IPS is now a form, Week 4 email)
 - [ ] Submitted ≥ 24h early — deadlines are 5:00 p.m. ET = 11:00 p.m. in France,
       and **no extensions are granted**
