@@ -21,7 +21,7 @@ handoff between sessions.
 - Trading Notes Analysis draft: `05-deliverables/01-trading-notes-analysis/draft.md`
   (IBTO, IBTQ, T-BOND 3.125% 15-Nov-2041). Due Fri 23 Oct 5 p.m. ET; target submit
   Thu 22 Oct.
-- Week 4 email recorded in `00-competition/week-4-email-2026-10.md` (21 Oct, Team Leader OK). Scope is uncertain; applied only as far as its own wording goes. Open: do font/spacing rules still bind now the IPS is a form?
+- Week 4 email recorded in `00-competition/week-4-email-2026-10.md` (21 Oct, Team Leader OK). Scope is uncertain; applied only as far as its own wording goes. Formatting rules still apply where the form allows (Team Leader, 22 Oct).
 - Q4 (Gift Portfolio) is overdue and now the top priority after the trades: ~$86k cash.
 
 ---

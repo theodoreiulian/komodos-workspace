@@ -87,7 +87,7 @@ The single most constrained document of the competition.
 | Size | 12-point |
 | Spacing | Double-spaced |
 | Margins | 1 inch, all sides |
-| File | ~~PDF, ≤ 5 MB~~ **Changed by the Week 4 email: submitted as a SurveyMonkey Apply form, not a PDF; "all other requirements remain the same".** Whether font/spacing/page rules still bind in a form is open (`week-4-email-2026-10.md`) |
+| File | ~~PDF, ≤ 5 MB~~ **Changed by the Week 4 email: submitted as a SurveyMonkey Apply form, not a PDF; "all other requirements remain the same".** Team Leader, 22 Oct: the font, size, spacing and margin rules still apply wherever the form allows them (`week-4-email-2026-10.md`) |
 | **Forbidden** | graphics, charts, images, attachments, external links, footnotes, formal citations |
 
 Sources need not be cited in the IPS; they must appear in the Final Report.

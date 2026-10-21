@@ -12,7 +12,7 @@ each change only as far as the email's own words carry it:
 
 | Change | What the email itself says it covers | How we apply it |
 |---|---|---|
-| IPS submitted as a SurveyMonkey Apply **form, not a PDF**; "All other requirements remain the same" | The Investment Policy Statement only | IPS only. The word limits (50 + 500) and content rules stay. PDF-only items (file size, page layout) no longer apply. Font and spacing may not be controllable in a form; whether they still bind is **open; ask the Team Leader**. |
+| IPS submitted as a SurveyMonkey Apply **form, not a PDF**; "All other requirements remain the same" | The Investment Policy Statement only | IPS only. The word limits (50 + 500) and content rules stay. PDF-only items (file size, page layout) no longer apply. **Clarified by the Team Leader, 22 Oct 2026:** the formatting rules (Times New Roman, 12-point, double-spaced, 1-inch margins) still apply wherever the form lets us apply them. |
 | Permitted investments: stocks, ETFs, and government/Treasury bonds available on WInS | Says "(for BOTH contributions, the Investment Policy Statement and Final Report)" | Applied to the strategy we recommend in the IPS and the Final Report. WInS trading rules in `competition-brief.md` §4 are unchanged. |
 | **Not permitted: TIPS and STRIPS** (plus margin, short selling, stock-secured debt, crypto, derivatives, anything else) | Same list, same scope as above | Applied the same way. Doesn't affect our plan: the ladder uses ordinary US Treasury bonds and iShares iBonds Treasury funds, and WInS lists no STRIPS. |
 | Rosters final; no members may be added | Whole competition | Already true (rosters locked 9 Oct). |
