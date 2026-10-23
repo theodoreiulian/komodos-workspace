@@ -108,7 +108,7 @@ reaches the finale. The filter is written quality, not returns.
 | Stocks | Any stock on WInS priced **≥ $5** (or local-currency equivalent) |
 | ETFs | Any ETF available on WInS |
 | Bonds | Treasury bonds of the **US, UK, Germany, France, Italy, Netherlands** |
-| Prohibited | Margin, short selling, stock-secured debt, crypto, derivatives |
+| Prohibited | Margin, short selling, stock-secured debt, crypto, derivatives. **For the strategy in the IPS and Final Report, also TIPS and STRIPS** and anything not on WInS (Week 4 email; scope note in `week-4-email-2026-10.md`) |
 | Commissions | $25 per stock trade, $10 per Treasury bond trade (charged on fills only) |
 | Execution | US orders fill at real-time prices during 9:30–16:00 ET; outside hours they fill at next open. International equities clear at end of the applicable trading day. Bond prices update once daily at US open; coupons pay semi-annually. |
 | FX | Conversions automatic, but FX moves affect holding values |

@@ -149,7 +149,7 @@ These are interpretations we may build on. Each needs to be defended, not assert
    contractually fixed and *not* inflation-linked, they can be matched **exactly**
    by nominal Treasury cash flows. There is no inflation risk in the operating
    commitment at all. Most teams will reflexively reach for TIPS and inflation
-   hedges here and will be solving a problem the case does not pose. Inflation
+   hedges here (TIPS are not permitted anyway: Week 4 email) and will be solving a problem the case does not pose. Inflation
    *does* matter — but for the **facility cost** and for Laura's real standard of
    living, not for the reserve.
 

@@ -3,9 +3,26 @@
 Read this at the start of every session and update it at the end. It is the
 handoff between sessions.
 
-**Last updated:** 2026-10-07 (AI authority, rule-source authority and roster;
-portfolio status below is otherwise as of 30 Sep and was not re-checked in this
-session)
+**Last updated:** 2026-10-21, evening (8 trades filled; analysis final)
+
+- **DONE 21 Oct: all 8 Promise Portfolio trades filled** (8/200 used, $85,781.79 cash).
+  Notes verified against WInS. Log: `04-portfolio/trade-log.md`, `trading-notes.md`.
+- **DONE 22 Oct 00:46 CEST: Trading Notes Analysis submitted** (Team Leader approved;
+  confirmation page shown). Q9 closed.
+- **Then:** Q4 Gift Portfolio (full protocol) → trades before 6 Nov; IPS draft by 27 Oct.
+
+## 21 Oct: read this first
+- **WInS on 21 Oct: 0/200 trades, $300,000 cash. The 2 Oct ladder was never bought.**
+- Ladder re-priced at WInS prices (`03-modeling/src/ladder_reprice_2026_10_21.py`).
+  Feb-2036 bond dropped (priced at a 4.19% yield vs 5.2%+ neighbours); IBTQ pays
+  2036 and 2037. 8 orders, ~$213,976. Decision log 21 Oct.
+- Orders + exact notes: `04-portfolio/trading-notes-drafts.md`. **WInS notes are
+  capped at 300 characters.** rules-auditor: PASS.
+- Trading Notes Analysis draft: `05-deliverables/01-trading-notes-analysis/draft.md`
+  (IBTO, IBTQ, T-BOND 3.125% 15-Nov-2041). Due Fri 23 Oct 5 p.m. ET; target submit
+  Thu 22 Oct.
+- Week 4 email recorded in `00-competition/week-4-email-2026-10.md` (21 Oct, Team Leader OK). Scope is uncertain; applied only as far as its own wording goes. Formatting rules still apply where the form allows (Team Leader, 22 Oct).
+- Q4 (Gift Portfolio) is overdue and now the top priority after the trades: ~$86k cash.
 
 ---
 

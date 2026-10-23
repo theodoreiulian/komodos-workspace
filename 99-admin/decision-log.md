@@ -144,6 +144,34 @@ the mirrored instructions in every project agent definition.
 
 ---
 
+## 2026-10-21 — Build the ladder today at WInS prices; drop the Feb-2036 bond and pay 2037 from IBTQ
+**Tier:** 2
+**Status:** Decided
+**Question:** The 2 Oct trades were never placed (WInS 0/200 on 21 Oct). The Trading
+Notes Analysis (due 23 Oct) needs executed trades with notes. What exactly do we buy
+today, and does the 30 Sep order list still hold at today's prices?
+**Options considered:** A the 30 Sep design at today's prices ($215,564, 9 trades);
+B drop the 4.500% 15-Feb-2036 bond and pay the 1 Jan 2037 bill from extra IBTQ
+($213,976, 8 trades); C rush a Gift Portfolio (Q4) trade so one note shows growth.
+**Decision:** B. Eight Promise Portfolio orders (list in
+`04-portfolio/trading-notes-drafts.md`). Q4 is not rushed: the three notes for the
+analysis come from the ladder (IBTO, IBTQ, T-BOND 3.125% 15-Nov-2041).
+**Reasoning:** WInS prices the Feb-2036 bond at 103.164, a 4.19% yield, while the
+next bonds yield 5.19% (2037) and 5.37% (2038). Buying it overpays for the same
+safety. B is $1,588 cheaper and one trade fewer even though the IBTQ money for 2037
+is assumed to sit a full year at 0%. C would put an untested allocation into the
+record to fill a deliverable; the IPS (6 Nov) is where the Gift Portfolio must be right.
+**Evidence:** `03-modeling/src/ladder_reprice_2026_10_21.py` (run output in its main()).
+**Strongest objection and the answer:** *More of the ladder sits in one fund (IBTQ
+$37.8k, two bills).* Accepted: IBTQ holds only US Treasuries; the 2% margin and a
+positive running surplus every year remain. *All three notes are bonds, none shows
+growth:* the reflections say plainly that the rest of the account is for growth and
+that this is where Laura's risk lives.
+**Revisit when:** WInS's Feb-2036 price comes back in line (yield within ~0.3 point of
+its neighbours) before 6 Nov; or IBTQ's limit order does not fill.
+
+---
+
 ## Open questions
 
 Owned by Claude. Priority order and dates live in `99-admin/state.md`.
@@ -158,4 +186,4 @@ Owned by Claude. Priority order and dates live in `99-admin/state.md`.
 | Q6 | Promise lock calibration: how much is locked in 2031, how the range and confidence are stated. Principle decided 30 Sep. **Due 16 Oct** | Final Report, criterion 5 |
 | Q7 | Does Laura's creative income being exposed to AI change a real allocation (Angle A)? If not, drop it. | Whether the thesis is specific to Laura |
 | Q8 | Model upgrades: historical resampling of returns instead of the current simplified random returns; interest rates that move; costs and inflation. | Whether the numbers are publishable |
-| Q9 | Which 3 Trading Notes go in the 23 Oct analysis? Means the trades behind them must be executed well before then. | Trading Notes Analysis |
+| ~~Q9~~ | ✅ **Submitted 22 Oct**: IBTO, IBTQ, T-BOND 3.125% 15-Nov-2041. Was: Which 3 Trading Notes go in the 23 Oct analysis? Means the trades behind them must be executed well before then. | Trading Notes Analysis |
