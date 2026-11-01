@@ -85,7 +85,8 @@ reaches the finale. The filter is written quality, not returns.
   is inside the window. Email saved in `99-admin/roster-confirmation-email.md`.
   After 9 Oct, 5:00 p.m. ET, rule 9 bites: no additions at all.
 - Student **team leader must be ≥ 16 on 28 September 2026** and is the single
-  point of contact and submitter. Changing the leader after 28 Sep needs approval.
+  point of contact and submitter. **The team leader cannot be changed** (Week 5
+  email: "Teams may not add members or change team leaders").
 - One teacher/educator advisor from our school. The advisor **may not make
   decisions for us or actively participate in trading or strategy**. A parent or
   finance professional may act as an unpaid *secondary* advisor.
@@ -108,7 +109,7 @@ reaches the finale. The filter is written quality, not returns.
 | Stocks | Any stock on WInS priced **≥ $5** (or local-currency equivalent) |
 | ETFs | Any ETF available on WInS |
 | Bonds | Treasury bonds of the **US, UK, Germany, France, Italy, Netherlands** |
-| Prohibited | Margin, short selling, stock-secured debt, crypto, derivatives. **For the strategy in the IPS and Final Report, also TIPS and STRIPS** and anything not on WInS (Week 4 email; scope note in `week-4-email-2026-10.md`) |
+| Prohibited | Margin, short selling, stock-secured debt, crypto, derivatives. **For the strategy in the IPS and Final Report (and modeling both contributions), also *individual* TIPS and *individual* STRIPS** and anything not on WInS. ETFs that hold TIPS are ETFs and are permitted (Week 5 email narrowed the Week 4 ban; see `week-5-email-2026-10.md`) |
 | Commissions | $25 per stock trade, $10 per Treasury bond trade (charged on fills only) |
 | Execution | US orders fill at real-time prices during 9:30–16:00 ET; outside hours they fill at next open. International equities clear at end of the applicable trading day. Bond prices update once daily at US open; coupons pay semi-annually. |
 | FX | Conversions automatic, but FX moves affect holding values |
