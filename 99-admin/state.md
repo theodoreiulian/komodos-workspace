@@ -5,6 +5,19 @@ handoff between sessions.
 
 **Last updated:** 2026-10-21, evening (8 trades filled; analysis final)
 
+## 1 Nov: Week 5 email logged (`00-competition/week-5-email-2026-10.md`)
+- **Ban narrowed to *individual* TIPS/STRIPS.** TIPS ETFs are now permitted as ETFs:
+  an option for the Gift Portfolio / inflation protection (Q4). Tell the Team Leader
+  before using one.
+- **Updated IPS instructions exist and are not in the repo.** Team Leader must add
+  them to `00-competition/source-documents/` (H8). IPS due **Fri 6 Nov, 5 p.m. ET =
+  23:00 France**; trading ends at the same moment.
+- Team leader can no longer be changed. Final Report instructions: Mon 9 Nov,
+  9:00 a.m. ET (15:00 France).
+- **School letter (P1/H4) still open**; Wharton says start now.
+- ⚠️ As of 1 Nov: `05-deliverables/02-investment-policy-statement/` is empty and
+  Q4 (Gift Portfolio, ~$86k cash) is untraded. Both must be done before 6 Nov.
+
 - **DONE 21 Oct: all 8 Promise Portfolio trades filled** (8/200 used, $85,781.79 cash).
   Notes verified against WInS. Log: `04-portfolio/trade-log.md`, `trading-notes.md`.
 - **DONE 22 Oct 00:46 CEST: Trading Notes Analysis submitted** (Team Leader approved;
@@ -100,7 +113,8 @@ hiked to 3.75–4.00% on 16–17 Sep; the snapshot is stale).
 
 | # | What | Who | Needed by |
 |---|---|---|---|
-| H4 | School letter — see `06-team/punchlist.md` P1. **Must now list five students, including Marc** | Team Leader | ask 30 Sep |
+| H4 | School letter — see `06-team/punchlist.md` P1. **Must now list five students, including Marc** | Team Leader | ask 30 Sep — **Wharton (Week 5): start now**; due 4 Dec |
+| H8 | Download the **updated IPS instructions** from SurveyMonkey Apply and add them to `00-competition/source-documents/` | Team Leader | **Mon 2 Nov** |
 | H7 | P9: Marc works through `06-team/onboarding-marc.md` | Marc + one teammate | Sun 11 Oct |
 | H5 | Session tasks P2, P5 (30 Sep); review Trading Note drafts P3 (Fri 12:00); enter trades after 15:30 Fri | Team | see punchlist |
 

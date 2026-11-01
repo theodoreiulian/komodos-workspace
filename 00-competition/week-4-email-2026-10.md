@@ -17,6 +17,11 @@ each change only as far as the email's own words carry it:
 | **Not permitted: TIPS and STRIPS** (plus margin, short selling, stock-secured debt, crypto, derivatives, anything else) | Same list, same scope as above | Applied the same way. Doesn't affect our plan: the ladder uses ordinary US Treasury bonds and iShares iBonds Treasury funds, and WInS lists no STRIPS. |
 | Rosters final; no members may be added | Whole competition | Already true (rosters locked 9 Oct). |
 
+**Update, 1 Nov 2026 (Week 5 email, `week-5-email-2026-10.md`):** the permitted list is
+now stated to cover modeling both contributions, the IPS and the Final Report, and the
+ban narrows to *individual* TIPS and STRIPS (ETFs holding them are permitted as ETFs).
+The Week 5 wording supersedes the TIPS/STRIPS row above.
+
 If the Team Leader later confirms a narrower scope, record it here and update the
 "How we apply it" column. Do not resolve the question from any outside source.
 

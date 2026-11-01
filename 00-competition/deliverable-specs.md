@@ -69,6 +69,11 @@ directly to criterion 4.
 
 The single most constrained document of the competition.
 
+⚠️ **Week 5 email: "Review the updated IPS instructions."** The updated
+instructions are not yet in this repository. The Team Leader must add them to
+`source-documents/` before the IPS is finalised (`week-5-email-2026-10.md`).
+Until then, this section is the rule.
+
 ### Structure — 3 pages maximum
 
 **Page 1 — title page (1 page max), must contain:**
@@ -136,7 +141,7 @@ freezes.** We may not revise the strategy in the Final Report.
 
 ## 4. Final Report + School Documentation — due 4 Dec 2026, 5:00 p.m. ET
 
-⚠️ Detailed requirements are **published on 9 November** — five days after the
+⚠️ Detailed requirements are **published on Mon 9 November, 9:00 a.m. ET (15:00 in France)** — five days after the
 IPS is frozen and 25 days before the deadline. Plan for a tight, intense build.
 
 Known scope: evaluate how we implemented the IPS strategy, and present analysis
