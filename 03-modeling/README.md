@@ -3,6 +3,13 @@
 Every number that appears in a deliverable must come from here or from a cited
 source. No orphan numbers.
 
+**4 November audit:** old full-scale “day-one lock” and “100% funded” claims
+are withdrawn. The September model bought a $319,892 ladder with only $300,000
+available and implicitly carried negative cash until 2028; fund proceeds were
+also estimated, not contractual. The new Gift model isolates policy comparisons
+and does **not** certify operating coverage. A cash-feasible staged audit remains
+required. Current framework: `../02-strategy/strategy-2026-11-04.md`.
+
 ## Contents
 | File | Purpose |
 |---|---|
@@ -10,8 +17,14 @@ source. No orphan numbers.
 | `output/core_model_run.txt` | Saved output of the current run |
 | `src/barbell_comparison.py` | Locking in the whole promise with a ladder + a growth sleeve vs. one balanced portfolio |
 | `output/barbell_comparison_run.txt` | Saved output |
-| `src/thesis_decision_2026_09_30.py` | **Current.** Cost of locking in the promise (curve + real WInS instruments, via a linear programme), the ⅔-scale WInS order list, and 4 strategies × 3 stock scenarios. Needs numpy + scipy. |
+| `src/thesis_decision_2026_09_30.py` | **Historical; funding claims not validated.** Ladder pricing and ⅔-scale simulator snapshot; S1 has the financing error described above. Needs numpy + scipy. |
 | `output/thesis_decision_2026_09_30_run.txt` | Saved output, 29 Sep 2026 prices |
+| `src/strategy_policy_2026_11_04.py` | Current Gift policy comparison, legacy audit, timing stresses and conditional sponsor-range examples; normalized capital after operating funding, not a full client projection. Needs numpy. |
+| `output/strategy_policy_2026_11_04_run.txt` | Saved output; assumed returns, 40/60 Gift target and cash-backed 2031 policy comparisons |
+| `src/check_ips_2026_11_04.py` | Counts the two IPS prose fields against 50/500-word limits and checks for link/image/footnote markup; Python standard library only |
+| `output/ips_word_counts_2026_11_04.json` | Saved IPS field counts, excluding section headings; rerun after text edits |
+| `src/operating_audit_2026_11_04.py` | Cash-feasible staged Treasury/cash operating example, payment dates, price sensitivity and conservative recorded-holdings diagnostic; numpy + scipy; dated assumptions, not orders |
+| `output/operating_audit_2026_11_04_run.txt` | Full staged budgets, every annual payment balance, cash events and dated cash-earmark sensitivities |
 
 ## `laura_core_model.py`
 

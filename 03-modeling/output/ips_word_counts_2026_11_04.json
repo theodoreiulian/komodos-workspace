@@ -1,0 +1,14 @@
+{
+  "pitch": {
+    "words": 46,
+    "conservative_words": 46,
+    "limit": 50,
+    "within_limit": true
+  },
+  "statement": {
+    "words": 498,
+    "conservative_words": 498,
+    "limit": 500,
+    "within_limit": true
+  }
+}

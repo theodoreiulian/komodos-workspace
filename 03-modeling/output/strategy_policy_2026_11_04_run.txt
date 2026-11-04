@@ -1,0 +1,255 @@
+LEGACY MODEL AUDIT — do not reuse old guarantees or dollar forecasts
+1. Full-scale 2027 ladder $319,892 exceeds available first contribution $300,000.
+   Gap=319,892-300,000=$19,892.
+   Legacy S1 code: 2028 growth=150000+(300000-real_ladder)*(1+one_year).
+   That carries negative 2027 cash at a borrowing rate; no staged holdings are modelled.
+   Correct implementation must use only available cash, complete ladder in2028,
+   reprice its missing portion, and retest every payment. No debt/margin assumed here.
+2. Fund coverage price*(1+(yield-expense)*years) is an approximation, not contractual
+   distributions plus terminal cash. Final fund payout/reinvestment risks remain;
+   2% buffer has not been shown sufficient. Earlier comments also say reinvestment
+   while the executed helper uses simple interest/0% idle cash.
+3. Legacy simulator sets S1 funded=True by construction. 100% is conditional on its
+   assumed cash schedule; not an empirically estimated operating success probability.
+4. WInS two-thirds scaling compresses $450k into an initial $300k snapshot; the
+   actual client has $300k in2027 and $150k only in2028. They are not same cash timeline.
+5. Legacy S1 growth in2028-30 correctly gets only three annual return intervals to
+   2031, but initial funding above invalidates its claimed day-one full lock.
+6. Old curve/prices dated Sep/Oct2026 are not verified live4Nov quotes.
+Old headline locations: 99-admin/decision-log.md, 99-admin/state.md,
+02-strategy/proposal-2026-09-30.md, 06-team/briefings/2026-09-30-lock-in-the-promise.md,
+03-modeling/README.md, output/thesis_decision_2026_09_30_run.txt,
+00-competition/client-brief-laura-gao.md. They are not overwritten by this run.
+
+NEW POLICY MODEL: amounts per100 units actually available1Jan2028 for Gift Portfolio
+Operating money excluded; no funded-operating probability or dollar gift is claimed.
+Seed=20261104; simulations=120,000; annual fee=0.15%; execution=0.10%.
+p5/median/p95 are simulated percentiles under assumptions, not calibrated confidence.
+Base floor is CASH HELD AT0% from2031to2033, after assumed execution costs.
+No2033Treasury availability is assumed. Positive coupon sensitivity is hypothetical only.
+Floor conditional on no withdrawals and no operating shortfall consuming that same cash.
+A locked fraction is NOT the eventual gift fraction or a separate contingency reserve.
+
+SCENARIO pessimistic: equity arithmetic mean3.0%, ordinary logSD16%,
+short rate1.0%, 2031cash backing rate0.0%, extra crash-35% chance5%/yr
+Equity Lock |2031wealth p5 med p95|2033backedfloor p5 med|2033total p5 med p95|Pr(floor<initial100)
+  0%  50% | 102.5  102.5  102.5 |  51.2   51.2 | 103.3  103.3  103.3 |100.0%
+  0%  75% | 102.5  102.5  102.5 |  76.8   76.8 | 102.8  102.8  102.8 |100.0%
+  0%  90% | 102.5  102.5  102.5 |  92.1   92.1 | 102.5  102.5  102.5 |100.0%
+  0% 100% | 102.5  102.5  102.5 | 102.4  102.4 | 102.4  102.4  102.4 |  0.0%
+ 40%  50% |  84.4  104.2  127.8 |  42.2   52.0 |  84.3  105.7  131.9 |100.0%
+ 40%  75% |  84.4  104.2  127.8 |  63.3   78.1 |  84.7  104.9  129.3 | 97.6%
+ 40%  90% |  84.4  104.2  127.8 |  75.9   93.7 |  84.6  104.4  128.2 | 70.2%
+ 40% 100% |  84.4  104.2  127.8 |  84.4  104.1 |  84.4  104.1  127.7 | 37.2%
+ 60%  50% |  75.8  104.7  141.4 |  37.9   52.3 |  75.4  106.3  147.6 |100.0%
+ 60%  75% |  75.8  104.7  141.4 |  56.8   78.4 |  76.0  105.6  143.6 | 90.8%
+ 60%  90% |  75.8  104.7  141.4 |  68.2   94.1 |  76.0  105.0  142.0 | 63.0%
+ 60% 100% |  75.8  104.7  141.4 |  75.7  104.6 |  75.7  104.6  141.2 | 40.5%
+ 80%  50% |  67.4  104.9  155.6 |  33.7   52.4 |  66.7  106.7  164.1 | 99.7%
+ 80%  75% |  67.4  104.9  155.6 |  50.5   78.6 |  67.6  106.0  158.7 | 84.1%
+ 80%  90% |  67.4  104.9  155.6 |  60.6   94.3 |  67.6  105.3  156.5 | 59.4%
+ 80% 100% |  67.4  104.9  155.6 |  67.3  104.8 |  67.3  104.8  155.5 | 42.4%
+100%  50% |  59.2  104.9  170.5 |  29.6   52.4 |  58.3  106.7  181.6 | 98.7%
+100%  75% |  59.2  104.9  170.5 |  44.4   78.6 |  59.3  106.0  174.6 | 78.8%
+100%  90% |  59.2  104.9  170.5 |  53.2   94.3 |  59.4  105.4  171.8 | 57.5%
+100% 100% |  59.2  104.9  170.5 |  59.2  104.8 |  59.2  104.8  170.4 | 43.9%
+Median2033 total (60% equity,75%lock) - (0%equity,75%lock): +2.74 units
+
+SCENARIO base: equity arithmetic mean6.5%, ordinary logSD14%,
+short rate3.0%, 2031cash backing rate0.0%, extra crash-35% chance5%/yr
+Equity Lock |2031wealth p5 med p95|2033backedfloor p5 med|2033total p5 med p95|Pr(floor<initial100)
+  0%  50% | 108.7  108.7  108.7 |  54.3   54.3 | 111.8  111.8  111.8 |100.0%
+  0%  75% | 108.7  108.7  108.7 |  81.4   81.4 | 110.2  110.2  110.2 |100.0%
+  0%  90% | 108.7  108.7  108.7 |  97.7   97.7 | 109.2  109.2  109.2 |100.0%
+  0% 100% | 108.7  108.7  108.7 | 108.6  108.6 | 108.6  108.6  108.6 |  0.0%
+ 40%  50% |  92.5  112.7  135.1 |  46.2   56.3 |  95.0  117.4  143.0 |100.0%
+ 40%  75% |  92.5  112.7  135.1 |  69.3   84.5 |  94.1  115.0  138.5 | 93.8%
+ 40%  90% |  92.5  112.7  135.1 |  83.2  101.4 |  93.2  113.6  136.2 | 45.0%
+ 40% 100% |  92.5  112.7  135.1 |  92.4  112.6 |  92.4  112.6  134.9 | 15.1%
+ 60%  50% |  84.6  114.5  149.3 |  42.2   57.2 |  86.8  119.8  160.3 |100.0%
+ 60%  75% |  84.6  114.5  149.3 |  63.4   85.8 |  86.1  117.2  153.9 | 82.8%
+ 60%  90% |  84.6  114.5  149.3 |  76.0  102.9 |  85.3  115.5  150.9 | 43.0%
+ 60% 100% |  84.6  114.5  149.3 |  84.5  114.4 |  84.5  114.4  149.1 | 21.7%
+ 80%  50% |  76.7  116.1  164.3 |  38.3   58.0 |  78.5  121.9  178.8 | 99.6%
+ 80%  75% |  76.7  116.1  164.3 |  57.4   87.0 |  78.2  119.1  170.4 | 74.1%
+ 80%  90% |  76.7  116.1  164.3 |  68.9  104.4 |  77.4  117.3  166.4 | 42.4%
+ 80% 100% |  76.7  116.1  164.3 |  76.6  116.0 |  76.6  116.0  164.2 | 25.8%
+100%  50% |  68.8  117.4  180.1 |  34.4   58.7 |  70.4  123.8  198.6 | 98.1%
+100%  75% |  68.8  117.4  180.1 |  51.6   88.0 |  70.3  120.9  187.8 | 68.3%
+100%  90% |  68.8  117.4  180.1 |  61.9  105.6 |  69.5  118.8  182.7 | 42.2%
+100% 100% |  68.8  117.4  180.1 |  68.8  117.3 |  68.8  117.3  179.9 | 28.9%
+Median2033 total (60% equity,75%lock) - (0%equity,75%lock): +7.04 units
+
+SCENARIO optimistic: equity arithmetic mean9.0%, ordinary logSD14%,
+short rate5.0%, 2031cash backing rate0.0%, extra crash-35% chance5%/yr
+Equity Lock |2031wealth p5 med p95|2033backedfloor p5 med|2033total p5 med p95|Pr(floor<initial100)
+  0%  50% | 115.1  115.1  115.1 |  57.5   57.5 | 120.8  120.8  120.8 |100.0%
+  0%  75% | 115.1  115.1  115.1 |  86.3   86.3 | 117.9  117.9  117.9 |100.0%
+  0%  90% | 115.1  115.1  115.1 | 103.5  103.5 | 116.2  116.2  116.2 |  0.0%
+  0% 100% | 115.1  115.1  115.1 | 115.0  115.0 | 115.0  115.0  115.0 |  0.0%
+ 40%  50% |  98.4  120.0  143.8 |  49.2   59.9 | 103.3  127.7  155.8 |100.0%
+ 40%  75% |  98.4  120.0  143.8 |  73.8   89.9 | 101.2  123.9  149.2 | 83.4%
+ 40%  90% |  98.4  120.0  143.8 |  88.5  107.9 |  99.6  121.5  145.7 | 25.0%
+ 40% 100% |  98.4  120.0  143.8 |  98.3  119.9 |  98.3  119.9  143.7 |  6.5%
+ 60%  50% |  90.2  122.2  159.4 |  45.1   61.0 |  94.6  130.8  175.2 | 99.9%
+ 60%  75% |  90.2  122.2  159.4 |  67.6   91.5 |  92.9  126.5  166.4 | 70.5%
+ 60%  90% |  90.2  122.2  159.4 |  81.1  109.8 |  91.4  123.9  161.8 | 29.0%
+ 60% 100% |  90.2  122.2  159.4 |  90.1  122.1 |  90.1  122.1  159.2 | 13.0%
+ 80%  50% |  82.0  124.2  175.8 |  40.9   62.0 |  85.9  133.6  196.1 | 98.9%
+ 80%  75% |  82.0  124.2  175.8 |  61.4   93.0 |  84.6  129.0  184.7 | 63.1%
+ 80%  90% |  82.0  124.2  175.8 |  73.7  111.6 |  83.1  126.1  178.9 | 31.4%
+ 80% 100% |  82.0  124.2  175.8 |  81.9  124.0 |  81.9  124.0  175.6 | 17.9%
+100%  50% |  73.8  125.9  193.1 |  36.9   62.9 |  77.2  136.0  218.6 | 96.3%
+100%  75% |  73.8  125.9  193.1 |  55.3   94.3 |  76.3  131.3  204.1 | 58.5%
+100%  90% |  73.8  125.9  193.1 |  66.3  113.2 |  74.9  128.1  197.0 | 33.1%
+100% 100% |  73.8  125.9  193.1 |  73.7  125.8 |  73.7  125.8  192.9 | 21.6%
+Median2033 total (60% equity,75%lock) - (0%equity,75%lock): +8.65 units
+
+SCENARIO no-risk-premium: equity arithmetic mean3.0%, ordinary logSD14%,
+short rate3.0%, 2031cash backing rate0.0%, extra crash-35% chance5%/yr
+Equity Lock |2031wealth p5 med p95|2033backedfloor p5 med|2033total p5 med p95|Pr(floor<initial100)
+  0%  50% | 108.7  108.7  108.7 |  54.3   54.3 | 111.8  111.8  111.8 |100.0%
+  0%  75% | 108.7  108.7  108.7 |  81.4   81.4 | 110.2  110.2  110.2 |100.0%
+  0%  90% | 108.7  108.7  108.7 |  97.7   97.7 | 109.2  109.2  109.2 |100.0%
+  0% 100% | 108.7  108.7  108.7 | 108.6  108.6 | 108.6  108.6  108.6 |  0.0%
+ 40%  50% |  89.2  108.3  129.3 |  44.6   54.1 |  90.4  111.2  134.9 |100.0%
+ 40%  75% |  89.2  108.3  129.3 |  66.9   81.1 |  90.1  109.7  131.5 | 97.4%
+ 40%  90% |  89.2  108.3  129.3 |  80.2   97.4 |  89.6  108.8  130.0 | 59.8%
+ 40% 100% |  89.2  108.3  129.3 |  89.1  108.2 |  89.1  108.2  129.2 | 23.9%
+ 60%  50% |  80.0  107.8  140.1 |  39.9   53.8 |  80.4  110.5  147.2 |100.0%
+ 60%  75% |  80.0  107.8  140.1 |  59.9   80.8 |  80.6  109.2  142.8 | 91.0%
+ 60%  90% |  80.0  107.8  140.1 |  71.9   96.9 |  80.3  108.3  140.9 | 57.7%
+ 60% 100% |  80.0  107.8  140.1 |  79.9  107.7 |  79.9  107.7  139.9 | 32.8%
+ 80%  50% |  71.0  107.1  151.3 |  35.5   53.5 |  70.8  109.5  159.9 | 99.9%
+ 80%  75% |  71.0  107.1  151.3 |  53.2   80.3 |  71.4  108.4  154.6 | 85.1%
+ 80%  90% |  71.0  107.1  151.3 |  63.8   96.3 |  71.2  107.6  152.3 | 56.9%
+ 80% 100% |  71.0  107.1  151.3 |  70.9  107.0 |  70.9  107.0  151.2 | 38.0%
+100%  50% |  62.3  106.2  162.9 |  31.1   53.1 |  61.6  108.2  173.1 | 99.4%
+100%  75% |  62.3  106.2  162.9 |  46.6   79.6 |  62.6  107.4  166.7 | 80.5%
+100%  90% |  62.3  106.2  162.9 |  56.0   95.5 |  62.5  106.7  164.1 | 56.6%
+100% 100% |  62.3  106.2  162.9 |  62.2  106.1 |  62.2  106.1  162.8 | 41.5%
+Median2033 total (60% equity,75%lock) - (0%equity,75%lock): -0.99 units
+
+FLEXIBILITY DISCIPLINE: promise cash floor; do not promise remaining initial capital.
+At2033maximum donation ceiling=floor+max(uncommitted2033-uncommitted2031,0). Retained=min(uncommitted2033,uncommitted2031).
+Actual extras are discretionary up to this ceiling; retaining more is allowed if the promised floor remains honored.
+This is a spending rule within Gift assets, not a separate contingency/endowment fund.
+Equity Lock |maximum donation ceiling p5 median p95|retained median|Pr(retained<uncommitted2031)
+  0%  50% |  57.4   57.4   57.4 |  54.3 |  0.0%
+  0%  75% |  83.0   83.0   83.0 |  27.2 |  0.0%
+  0%  90% |  98.3   98.3   98.3 |  10.9 |  0.0%
+  0% 100% | 108.6  108.6  108.6 |   0.0 |  0.0%
+ 40%  50% |  49.1   61.4   77.1 |  55.8 | 18.8%
+ 40%  75% |  71.2   87.1  105.1 |  27.9 | 18.8%
+ 40%  90% |  84.1  102.5  122.8 |  11.2 | 18.8%
+ 40% 100% |  92.4  112.6  134.9 |   0.0 |  0.0%
+ 60%  50% |  45.5   63.5   88.3 |  56.1 | 24.8%
+ 60%  75% |  65.6   89.2  117.4 |  28.0 | 24.8%
+ 60%  90% |  77.0  104.3  136.2 |  11.2 | 24.8%
+ 60% 100% |  84.5  114.4  149.1 |   0.0 |  0.0%
+ 80%  50% |  41.9   65.6  100.6 |  56.1 | 28.4%
+ 80%  75% |  59.9   91.1  130.5 |  28.1 | 28.4%
+ 80%  90% |  70.0  106.1  150.4 |  11.2 | 28.4%
+ 80% 100% |  76.6  116.0  164.2 |   0.0 |  0.0%
+100%  50% |  38.2   67.5  113.8 |  56.0 | 30.8%
+100%  75% |  54.1   92.9  144.6 |  28.0 | 30.8%
+100%  90% |  63.0  107.7  165.4 |  11.2 | 30.8%
+100% 100% |  68.8  117.3  179.9 |   0.0 |  0.0%
+
+DETERMINISTIC TIMING STRESSES;75%lock; eq[2028,2029,2030,2031,2032]
+Path Equity |2031wealth |2033backed |2033total |uncommitted |maxdonationceiling |retained
+steady6.5%                   0% |   108.67 |     81.42 |   110.16 |      28.74 |        82.99 |   27.17
+steady6.5%                  40% |   113.16 |     84.79 |   115.53 |      30.74 |        87.24 |   28.29
+steady6.5%                  60% |   115.46 |     86.51 |   118.29 |      31.79 |        89.43 |   28.86
+steady6.5%                  80% |   117.78 |     88.25 |   121.11 |      32.86 |        91.66 |   29.44
+steady6.5%                 100% |   120.13 |     90.01 |   123.97 |      33.96 |        93.94 |   30.03
+crash2030-beforepromise      0% |   108.67 |     81.42 |   110.16 |      28.74 |        82.99 |   27.17
+crash2030-beforepromise     40% |    93.00 |     69.68 |    94.95 |      25.27 |        71.70 |   23.25
+crash2030-beforepromise     60% |    84.81 |     63.54 |    86.89 |      23.35 |        65.69 |   21.20
+crash2030-beforepromise     80% |    76.37 |     57.22 |    78.52 |      21.31 |        59.43 |   19.09
+crash2030-beforepromise    100% |    67.68 |     50.71 |    69.84 |      19.13 |        52.92 |   16.92
+crash2032-afterpromise       0% |   108.67 |     81.42 |   110.16 |      28.74 |        82.99 |   27.17
+crash2032-afterpromise      40% |   113.16 |     84.79 |   110.05 |      25.27 |        84.79 |   25.27
+crash2032-afterpromise      60% |   115.46 |     86.51 |   109.85 |      23.35 |        86.51 |   23.35
+crash2032-afterpromise      80% |   117.78 |     88.25 |   109.55 |      21.31 |        88.25 |   21.31
+crash2032-afterpromise     100% |   120.13 |     90.01 |   109.14 |      19.13 |        90.01 |   19.13
+bad2028and2030               0% |   108.67 |     81.42 |   110.16 |      28.74 |        82.99 |   27.17
+bad2028and2030              40% |    83.73 |     62.73 |    85.48 |      22.75 |        64.55 |   20.93
+bad2028and2030              60% |    72.35 |     54.21 |    74.13 |      19.92 |        56.04 |   18.09
+bad2028and2030              80% |    61.74 |     46.26 |    63.48 |      17.23 |        48.05 |   15.43
+bad2028and2030             100% |    51.90 |     38.89 |    53.56 |      14.67 |        40.58 |   12.97
+zeroequityreturn             0% |   108.67 |     81.42 |   110.16 |      28.74 |        82.99 |   27.17
+zeroequityreturn            40% |   104.92 |     78.61 |   105.71 |      27.10 |        79.48 |   26.23
+zeroequityreturn            60% |   103.07 |     77.23 |   103.54 |      26.31 |        77.77 |   25.77
+zeroequityreturn            80% |   101.25 |     75.86 |   101.40 |      25.54 |        76.09 |   25.31
+zeroequityreturn           100% |    99.45 |     74.51 |    99.30 |      24.79 |        74.51 |   24.79
+
+SENSITIVITIES for60%equity/75%lock; other base assumptions unchanged
+Annual fee0.00%:2033total p5/median/p95=86.59/117.82/154.77
+Annual fee0.15%:2033total p5/median/p95=86.13/117.20/153.95
+Annual fee0.50%:2033total p5/median/p95=85.07/115.76/152.04
+2031lock coupon0.0%:floor median85.78,totalmedian117.20
+2031lock coupon1.0%:floor median87.50,totalmedian118.92
+2031lock coupon3.0%:floor median90.93,totalmedian122.35
+2031lock coupon5.0%:floor median94.36,totalmedian125.79
+
+CONDITIONAL 2031 RANGE: observed Gift assets = 100 AFTER an operating-coverage recheck
+Choice: 75% cash backing at 0%; 0.10% execution cost; 25 units unpromised in 40/60.
+Backed floor = 100 x 0.75 x 0.999 = 74.925.
+Two future years only. Maximum donation ceiling = floor + max(U2033 - 25, 0).
+Actual donation may be between the honored floor and this ceiling after a fresh flexibility review.
+The ceiling is NOT an instruction to donate the maximum, and NOT total Gift assets.
+Scenario           Floor  Ceiling q90  Ceiling q95  Ceiling exactly floor  Median retained  Model coverage [floor,q90]
+base               74.925       80.299       81.311                18.77%           25.000                      90.00%
+pessimistic        74.925       79.168       80.285                38.49%           25.000                      90.00%
+no-risk-premium    74.925       79.427       80.393                26.82%           25.000                      90.00%
+These percentages describe the specified simulation, not calibrated real-world confidence.
+If the floor is honored and actual gifts stay below their modeled ceilings, [floor,q90]
+covers AT LEAST the modeled 90% fraction, not necessarily exactly 90%: discretion can lower extras.
+Unconditional 2028 forecasts also include uncertain wealth by2031; this table conditions on100 observed then.
+
+OPERATING TOP-UP BRANCH: a later operating shortfall uses unpromised assets first, then floor cash.
+Arithmetic illustration only: U2033 = 20 before top-up; original floor = 74.925.
+Top-up  U used  Floor used  Floor remaining  U remaining  Max donation ceiling  Old pledge shortfall
+   0.0     0.0         0.0           74.925         20.0                74.925                0.000
+  15.0    15.0         0.0           74.925          5.0                74.925                0.000
+  30.0    20.0        10.0           64.925          0.0                64.925               10.000
+A 15-unit top-up leaves the pledge backed but reduces flexibility. A 30-unit top-up consumes
+10 units of backing: the old pledge is short. No unconditional floor or 90% coverage survives that branch.
+Review operating coverage before pledging and monitor it afterward; do not count one dollar twice.
+
+STAGED2027/2028 BUDGET FEASIBILITY EXAMPLE, NOT AN AUDITED HOLDINGS SCHEDULE
+Using legacy dated319892cost only as a budget illustration:2027contribution300000,
+unfunded portion19892;2028contribution150000 first buys the missing protection.
+Missingprotection price factor0.7:2028topup=13,924.40;leftforGift=136,075.60.
+Missingprotection price factor1.0:2028topup=19,892.00;leftforGift=130,108.00.
+Missingprotection price factor1.3:2028topup=25,859.60;leftforGift=124,140.40.
+Missingprotection price factor2.0:2028topup=39,784.00;leftforGift=110,216.00.
+This does not validate buying300000ofparticularholdings in2027; exact datedcash flows
+and prices must be rebuilt. Highercosts first reduce growthcapital, never create debt.
+
+HAND CHECK:2031observedGift100;75%cashlock;0%cashyield;execution0.10%
+Cashfloor=100x0.75x0.999=74.925;25remainunpromised.
+Inonebadyear(-40%equity,+3%Treasury),40%equityremainder=25x(0.40x0.60+0.60x1.03)x0.9985=21.417825.
+Donation=74.925+max(21.417825-25,0)=74.925;retained=21.417825.
+Thepledgedfloorstaysbacked;unpromisedcapitalcanfall. Itisnotaguaranteedflexibilityamount.
+
+BEGINNER EXAMPLES: same observed 2031 Gift balance and net cash backing
+If 25 unpromised units become 28, extra-gift ceiling = max(28 - 25, 0) = 3; total-gift ceiling = 74.925 + 3 = 77.925.
+If 25 unpromised units become 20, extra-gift ceiling = max(20 - 25, 0) = 0; total-gift ceiling = 74.925 + 0 = 74.925.
+
+DECISION SUPPORTED: early protection of the operating promise remains a sound objective,
+but legacy modelling does NOT prove full2027lock or100%certainty. Audit/stage funding first.
+For Gift policy, diversified40%-60%equity and a2031cash-backing rule trade upside for a steadier
+sponsor contribution.40%equity/75%cashlock better prioritizes downside than60%equity, with modest
+base median upside sacrificed. This is a defensible POLICY CHOICE, not a numerical optimum.
+0%equity wins downside;100%equity wins high-return upside; no weight dominates all scenarios.
+A2030crash lowers the floor she can responsibly announce; locking in2031cannot repair that.
+75%cashlock materially limits post-promise downside while leaving25%capital uncommitted;90%or100%
+raises backing but reduces flexibility. Actual communicated minimum must also reserve any
+needed operating top-up and flexibility BEFORE making the promise; cannot pledge same money twice.
+Do not infer an exact lockfraction from a desired confidence level: locked cash and model range
+answer different questions. Re-evaluate cost, missing payment coverage and true2031wealth then.
+LIMITS: not calibrated historical bootstrap; iid mixture; constant short-rate scenarios;
+no inflation purchasing-power forecast or localTaiwan costs; no simulator availability test.
+Annual2031rebalancing assumed before lock; floor is nominalcash; no marginal taxes (outofscope).

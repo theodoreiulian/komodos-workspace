@@ -3,6 +3,15 @@
 *Source: 2026 WGY Gao Case Study (archived in `source-documents/`). Facts below
 are from the case; inferences are labelled as such.*
 
+**4 November research/model correction:** the case facts remain the starting
+point. The old “Inferences and hooks” and arithmetic commentary below are
+historical analysis, not current conclusions. In particular, a personalized
+AI hedge and day-one/risk-free operating funding were not established; do not
+reuse those claims or dated market figures as current evidence. See
+`../01-research/strategy-evidence-2026-11-04.md` and
+`../02-strategy/strategy-2026-11-04.md` for the current assessment. The recorded
+Week 5 update governs permitted instruments, not the old blanket TIPS aside.
+
 ---
 
 ## Who she is

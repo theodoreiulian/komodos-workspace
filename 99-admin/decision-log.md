@@ -172,6 +172,46 @@ its neighbours) before 6 Nov; or IBTQ's limit order does not fill.
 
 ---
 
+## 2026-11-04 — Protect operations from actual contributions; moderate global growth; back sponsor promises before making them
+**Tier:** 3
+**Status:** Decided — framework adopted; operating audit, exact holdings and IPS submission remain unfinished. Partially reverses 30 Sep: withdraw literal all-ten-on-day-one lock and validated 100% success; retain operating-first hierarchy.
+**Question:** What framework fits Laura, distinguishes the team through reasoning rather than thematic investments, and can be stated before the IPS freeze?
+**Options considered:** all-safe surplus; moderate global-stock surplus; high-stock surplus; AI/art thematic tilt; unbacked forecast-based sponsor range; cash-backed lower-end budget with conditional upside. Also retain the old fully funded 2027 claim versus cash-feasible staging.
+**Decision:** Adopt `02-strategy/strategy-2026-11-04.md`:
+- Start operating protection using only the 2027 contribution; complete/repair it first with the 2028 contribution. Growth gets verified surplus only. Audit all payment dates and conservative fund proceeds; no borrowing, assumed stock-return rescue or outside funding.
+- Within the Gift Portfolio, target 40% broad global stocks and 60% eligible short USD Treasuries/cash; annual review/rebalance after operating checks. No dedicated AI, arts or geographic theme.
+- In 2031, recheck and repair operations first; put 75% of remaining Gift assets into cash, quote the net funded amount as the lower-end building budget, and leave 25% unpromised under the same 40/60 policy. Assume zero cash interest. These are policy choices, not optimal weights or confidence levels.
+- In 2033, reserve first, first operating payment second, building gift afterward. Additional giving is capped at gains above the initial unpromised 2031 capital and remains discretionary after fresh checks. No guaranteed retained amount and no separately sized contingency/endowment fund.
+- Operating deficits after 2031 use unpromised capital first, then reduce the building budget if necessary; disclose the changed range. The sponsor minimum is conditional, not an unconditional promise immune to operating risk.
+- Final Report must calculate modeled dollar ranges and confidence for the actual gift within both bounds, including operating/flexibility failure branches, then explain how the fixed rule updates on observed 2031 wealth. Do not defer all numbers until real 2031.
+**Reasoning:** The fixed annual bills and the discretionary building gift bear different risks. The 2031 sponsor announcement shortens the useful growth horizon and makes credibility part of the investment policy. Moderate surplus growth keeps ambition while limiting pre-announcement downside. Broad diversification is defensible without inventing Laura-specific AI income correlations.
+**Evidence:** original case/guide/IPS and recorded criteria in `00-competition/`; `01-research/strategy-evidence-2026-11-04.md`; new script/output `strategy_policy_2026_11_04`; independent red-team, judge and rules notes in `.context/`. Normalized base maximum-gift ceilings at 40% stocks vs 60%: middle 87.1 vs 89.2 units, lower fifth percentile 71.2 vs 65.6 per 100 starting Gift units. Assumed returns, not market quotes or calibrated probabilities. All-safe wins downside; no dominance or optimizer claim.
+**Correction:** legacy January-2027 ladder $319,892 exceeds available $300,000 by $19,892. `run_strategies` effectively financed that gap until 2028 and assigned success by construction. Its fund proceeds approximation did not validate the 2% cushion. Withdraw the day-one and validated-100% headlines; preserve old outputs and immutable executed Trading Notes as historical evidence.
+**Strongest objection (red team) and the answer:** all-safe provides a steadier sponsor quote, whereas growth risk can hurt before 2031. Accepted tradeoff: 40% stocks is a deliberately limited growth choice, not mathematically necessary. The 75% cash rule is also chosen, not inferred from client utility. Red-team follow-up required post-2031 operating priority and a discretionary extra-gift ceiling; both incorporated. Judge review finds operating proof and authentic student experience still weak; these are outstanding work, not solved by narrative. Rules review passes framework conditional on these corrections, not trades or final submission.
+**Revisit when:** before 6 Nov, staged operating audit fails, realistic costs/payout assumptions materially reduce surplus, or stronger joint tests reverse the tradeoff. After freeze, apply the fixed top-up, range-update and spending rules; do not redesign the IPS with hindsight.
+**Brief:** `06-team/briefings/2026-11-04-back-the-promise.md` (beginner review completed; fixes incorporated before final handoff).
+
+---
+
+## 2026-11-04 — Submit the reviewed IPS through the Team Leader's account
+**Tier:** Operating action — explicitly authorised by the Team Leader
+**Status:** Complete; portal confirmation observed
+**Decision/action:** Entered and saved the final 46-word pitch and 498-word
+statement, read back the saved values and verified them against the reviewed
+draft, marked the task complete, reviewed the attached existing roster and
+submitted application2026-1052791973. No new personal fields or legal agreement
+were required. Official roster team name verified as **Komodos**.
+**Evidence:** `05-deliverables/02-investment-policy-statement/submitted.md` and
+`submission-record.md`; `.context/ips-submission-confirmation-2026-11-04.png`
+and matching accessibility text. Portal explicitly confirmed receipt of the IPS
+on4Nov, approximately22:08–22:09CET.
+**Limits:** no new portfolio orders and no certification of live operating/Gift
+cash classification. Those implementation checks remain open before the freeze.
+**Revisit when:** a portal receipt problem is reported; preserve the submitted
+archive rather than silently rewriting its historical text.
+
+---
+
 ## Open questions
 
 Owned by Claude. Priority order and dates live in `99-admin/state.md`.
@@ -181,9 +221,9 @@ Owned by Claude. Priority order and dates live in `99-admin/state.md`.
 | ~~Q1~~ | ✅ **Answered 29 Sep** — full 2033–42 ladder buildable; see `04-portfolio/wins-instruments.md`. Was: What can WInS actually trade? Individual Treasuries 2033–2042? STRIPS (bonds that pay one amount at maturity and nothing before)? Target-maturity bond ETFs (funds that hold bonds maturing in one year, then close and pay out)? | Whether a matched ladder can be built at all |
 | ~~Q2~~ | ✅ **Decided 30 Sep**: structural. Lock all ten payments at the start. | — |
 | ~~Q3~~ | ✅ **Decided 30 Sep**: all of it, at the start (1 Jan 2027 in the plan; now in WInS). | — |
-| Q4 | What goes in the Gift Portfolio, how much risk, and what makes it Laura's? **Due 7 Oct** (judge panel: client knowledge is our weakest criterion) | Trades, Trading Notes, the facility gift |
-| Q5 | Does the growth portion reduce risk ahead of 2033, and on what rule? | "Changing time horizons" (criterion 1) |
-| Q6 | Promise lock calibration: how much is locked in 2031, how the range and confidence are stated. Principle decided 30 Sep. **Due 16 Oct** | Final Report, criterion 5 |
-| Q7 | Does Laura's creative income being exposed to AI change a real allocation (Angle A)? If not, drop it. | Whether the thesis is specific to Laura |
-| Q8 | Model upgrades: historical resampling of returns instead of the current simplified random returns; interest rates that move; costs and inflation. | Whether the numbers are publishable |
+| Q4 | **Framework decided 4 Nov:** 40% global stocks / 60% short USD Treasuries-or-cash within verified surplus. Exact eligible holdings and orders remain open. | Implementation before freeze |
+| Q5 | **Decided 4 Nov:** operating checks annually; 2031 cash backing removes most risk from announced contribution; payment-near reserve becomes cash. | IPS and implementation |
+| Q6 | **Policy decided 4 Nov:** 75% net cash backing / 25% unpromised; discretionary extra-gift ceiling. Full modeled dollar ranges, confidence and joint operating-failure analysis still required. | Final Report, criterion 5 |
+| Q7 | **Decided 4 Nov:** drop personalized AI hedge and thematic tilt. Evidence does not establish Laura's income-stock correlation; use broad diversification and promise timing. | Client-specific reasoning |
+| Q8 | **Urgent:** rebuild cash-feasible staged operating schedule; audit actual fund payouts/risks and buffer; correct simulator mapping. Then strengthen normalized mixture model with historical/parameter sensitivity and purchasing-power discussion. | Exact orders, funding claims, publishable projections |
 | ~~Q9~~ | ✅ **Submitted 22 Oct**: IBTO, IBTQ, T-BOND 3.125% 15-Nov-2041. Was: Which 3 Trading Notes go in the 23 Oct analysis? Means the trades behind them must be executed well before then. | Trading Notes Analysis |

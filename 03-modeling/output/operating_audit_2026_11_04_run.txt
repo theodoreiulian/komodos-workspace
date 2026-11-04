@@ -1,0 +1,389 @@
+OPERATING AUDIT — dated research scenarios, NOT orders or a live portfolio certification
+Case cash:300,000 on1Jan2027;150,000 on1Jan2028;ten50,000 bills Jan2033-2042.
+No borrowing, coupon reinvestment, stock rescues, outside money or early use of150,000.
+Reference clean prices21Oct2026; future Jan2027sameclean assumption; Jan2028shock shown.
+Accrued interest recomputed at eachJan1. Purchases settle before subsequent coupons.
+All bond receipts and held cash earn0%; no fund return/distribution credited beforeclosing.
+Fund terminal netcash per share=recordedreferenceprice times90/95/100%; NOT a guarantee.
+Model target=51,000 annual available cash (50,000 obligation+chosen2%cushion).
+MILP chooses whole bonds/shares/cashdollars, stages and exact trade commissions.
+Base design is robust to10%fundproceedshaircut AND30%higher2028cleanpurchaseprices.
+
+FEASIBLE STAGED RESEARCH EXAMPLE; solve status: Optimization terminated successfully. (HiGHS Status 7: Optimal)
+Asset                                    2027 units    2028 units
+Treasury 4.750% Feb2037                          43             0
+Treasury 4.500% May2038                          44             0
+Treasury 4.375% Nov2039                          45             0
+Treasury 4.250% Nov2040                          53             0
+Treasury 3.125% Nov2041                          44             0
+IBTO closes Dec2033                               0             0
+IBTP closes Dec2034                               0             0
+IBTQ closes Dec2035                               0             0
+Cash held at0%                               92,459        66,574
+Bond units=$1,000face;fundunits=shares;cashunits=$1. Research quantities only.
+2027-01-01 contribution300,000.00;spent299,999.00;unspent1.00.
+2028-01-01 contribution150,000.00;spent66,574.00;unspent83,426.00.
+Gift capital available after completion=83,427.00; no assumed investmentgain.
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+
+FROZEN2027 HOLDINGS; reoptimize completion only after2028prices observed
+Haircut Shock |2027spend |2028spend |Giftcapital |Minimumafter-billcash |Status
+  0%   0% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  0%  10% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  0%  30% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  0%  50% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  5%   0% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  5%  10% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  5%  30% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+  5%  50% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+ 10%   0% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+ 10%  10% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+ 10%  30% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+ 10%  50% |299,999.00 | 66,574.00 | 83,427.00 |            5,220.50 |feasible
+Payment date | Cash received since prior bill | Bill | Cash remaining after bill
+1 Jan 2033          216,745.50                50,000         166,745.50
+1 Jan 2034            9,618.75                50,000         126,364.25
+1 Jan 2035            9,618.75                50,000          85,983.00
+1 Jan 2036            9,618.75                50,000          45,601.75
+1 Jan 2037            9,618.75                50,000           5,220.50
+1 Jan 2038           51,597.50                50,000           6,818.00
+1 Jan 2039           50,586.25                50,000           7,404.25
+1 Jan 2040           50,596.25                50,000           8,000.50
+1 Jan 2041           56,627.50                50,000          14,628.00
+1 Jan 2042           45,375.00                50,000          10,003.00
+No2028bond/fundpurchase occurs in this selected design, so2028marked-assetprice shocks
+are immaterial for it. This is a cash-bridge result, not proof about futuremarketprices.
+
+2027REFERENCEPRICE SENSITIVITY: reoptimize both stages, maintain separate300k/150kbudgets
+2027cleanprices+10%: stage1=299,797.69;stage2=87,315.00;Gift=62,887.31;minafterbill=5,325.50.
+2027cleanprices+20%: stage1=299,999.21;stage2=107,625.00;Gift=42,375.79;minafterbill=5,325.50.
+2027cleanprices+30%: stage1=299,634.72;stage2=128,501.00;Gift=21,864.28;minafterbill=5,325.50.
+2027cleanprices+50%: INFEASIBLE undertheseinputs; The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)
+
+CURRENT RECORDED8-HOLDING SNAPSHOT DIAGNOSTIC, separate from real stagedcase
+Starting cash85,781.79 recorded21Oct2026, NOT verified4Nov. Scaledbill=50,000x2/3.
+
+Fund haircut0%: additionalcash earmark for2%cushion=29,799.10;
+85,781.79 minus earmark leaves55,982.69potentialGiftcash (dateddiagnostic).
+Year | Surplus WITHOUT earmark | Surplus WITH earmark after scaled33,333.33bill
+2033            8,065.42                    37,864.52
+2034           -1,554.44                    28,244.66
+2035          -10,566.97                    19,232.13
+2036              392.57                    30,191.67
+2037          -26,465.77                     3,333.33
+2038          -25,012.85                     4,786.25
+2039          -23,923.68                     5,875.42
+2040          -22,509.52                     7,289.58
+2041          -21,451.60                     8,347.50
+2042          -20,753.68                     9,045.42
+
+Fund haircut5%: additionalcash earmark for2%cushion=33,444.21;
+85,781.79 minus earmark leaves52,337.58potentialGiftcash (dateddiagnostic).
+Year | Surplus WITHOUT earmark | Surplus WITH earmark after scaled33,333.33bill
+2033            8,065.42                    41,509.62
+2034           -2,416.36                    31,027.85
+2035          -12,321.18                    21,123.02
+2036           -3,252.54                    30,191.67
+2037          -30,110.87                     3,333.33
+2038          -28,657.96                     4,786.25
+2039          -27,568.79                     5,875.42
+2040          -26,154.62                     7,289.58
+2041          -25,096.71                     8,347.50
+2042          -24,398.79                     9,045.42
+
+Fund haircut10%: additionalcash earmark for2%cushion=37,089.32;
+85,781.79 minus earmark leaves48,692.47potentialGiftcash (dateddiagnostic).
+Year | Surplus WITHOUT earmark | Surplus WITH earmark after scaled33,333.33bill
+2033            8,065.42                    45,154.73
+2034           -3,278.28                    33,811.03
+2035          -14,075.40                    23,013.92
+2036           -6,897.65                    30,191.67
+2037          -33,755.98                     3,333.33
+2038          -32,303.07                     4,786.25
+2039          -31,213.90                     5,875.42
+2040          -29,799.73                     7,289.58
+2041          -28,741.82                     8,347.50
+2042          -28,043.90                     9,045.42
+
+KNOWN TREASURY CASH EVENTS FOR CHOSEN STAGED EXAMPLE (unit coupons and principal)
+2027-01-01: 43 x Treasury 4.750% Feb2037; paid42,654.35 beforecommission
+  2027-02-15: 43 x 23.750 = 1,021.25
+  2027-08-15: 43 x 23.750 = 1,021.25
+  2028-02-15: 43 x 23.750 = 1,021.25
+  2028-08-15: 43 x 23.750 = 1,021.25
+  2029-02-15: 43 x 23.750 = 1,021.25
+  2029-08-15: 43 x 23.750 = 1,021.25
+  2030-02-15: 43 x 23.750 = 1,021.25
+  2030-08-15: 43 x 23.750 = 1,021.25
+  2031-02-15: 43 x 23.750 = 1,021.25
+  2031-08-15: 43 x 23.750 = 1,021.25
+  2032-02-15: 43 x 23.750 = 1,021.25
+  2032-08-15: 43 x 23.750 = 1,021.25
+  2033-02-15: 43 x 23.750 = 1,021.25
+  2033-08-15: 43 x 23.750 = 1,021.25
+  2034-02-15: 43 x 23.750 = 1,021.25
+  2034-08-15: 43 x 23.750 = 1,021.25
+  2035-02-15: 43 x 23.750 = 1,021.25
+  2035-08-15: 43 x 23.750 = 1,021.25
+  2036-02-15: 43 x 23.750 = 1,021.25
+  2036-08-15: 43 x 23.750 = 1,021.25
+  2037-02-15: 43 x 1023.750 = 44,021.25
+2027-01-01: 44 x Treasury 4.500% May2038; paid41,845.87 beforecommission
+  2027-05-15: 44 x 22.500 = 990.00
+  2027-11-15: 44 x 22.500 = 990.00
+  2028-05-15: 44 x 22.500 = 990.00
+  2028-11-15: 44 x 22.500 = 990.00
+  2029-05-15: 44 x 22.500 = 990.00
+  2029-11-15: 44 x 22.500 = 990.00
+  2030-05-15: 44 x 22.500 = 990.00
+  2030-11-15: 44 x 22.500 = 990.00
+  2031-05-15: 44 x 22.500 = 990.00
+  2031-11-15: 44 x 22.500 = 990.00
+  2032-05-15: 44 x 22.500 = 990.00
+  2032-11-15: 44 x 22.500 = 990.00
+  2033-05-15: 44 x 22.500 = 990.00
+  2033-11-15: 44 x 22.500 = 990.00
+  2034-05-15: 44 x 22.500 = 990.00
+  2034-11-15: 44 x 22.500 = 990.00
+  2035-05-15: 44 x 22.500 = 990.00
+  2035-11-15: 44 x 22.500 = 990.00
+  2036-05-15: 44 x 22.500 = 990.00
+  2036-11-15: 44 x 22.500 = 990.00
+  2037-05-15: 44 x 22.500 = 990.00
+  2037-11-15: 44 x 22.500 = 990.00
+  2038-05-15: 44 x 1022.500 = 44,990.00
+2027-01-01: 45 x Treasury 4.375% Nov2039; paid41,455.36 beforecommission
+  2027-05-15: 45 x 21.875 = 984.38
+  2027-11-15: 45 x 21.875 = 984.38
+  2028-05-15: 45 x 21.875 = 984.38
+  2028-11-15: 45 x 21.875 = 984.38
+  2029-05-15: 45 x 21.875 = 984.38
+  2029-11-15: 45 x 21.875 = 984.38
+  2030-05-15: 45 x 21.875 = 984.38
+  2030-11-15: 45 x 21.875 = 984.38
+  2031-05-15: 45 x 21.875 = 984.38
+  2031-11-15: 45 x 21.875 = 984.38
+  2032-05-15: 45 x 21.875 = 984.38
+  2032-11-15: 45 x 21.875 = 984.38
+  2033-05-15: 45 x 21.875 = 984.38
+  2033-11-15: 45 x 21.875 = 984.38
+  2034-05-15: 45 x 21.875 = 984.38
+  2034-11-15: 45 x 21.875 = 984.38
+  2035-05-15: 45 x 21.875 = 984.38
+  2035-11-15: 45 x 21.875 = 984.38
+  2036-05-15: 45 x 21.875 = 984.38
+  2036-11-15: 45 x 21.875 = 984.38
+  2037-05-15: 45 x 21.875 = 984.38
+  2037-11-15: 45 x 21.875 = 984.38
+  2038-05-15: 45 x 21.875 = 984.38
+  2038-11-15: 45 x 21.875 = 984.38
+  2039-05-15: 45 x 21.875 = 984.38
+  2039-11-15: 45 x 1021.875 = 45,984.38
+2027-01-01: 53 x Treasury 4.250% Nov2040; paid47,668.62 beforecommission
+  2027-05-15: 53 x 21.250 = 1,126.25
+  2027-11-15: 53 x 21.250 = 1,126.25
+  2028-05-15: 53 x 21.250 = 1,126.25
+  2028-11-15: 53 x 21.250 = 1,126.25
+  2029-05-15: 53 x 21.250 = 1,126.25
+  2029-11-15: 53 x 21.250 = 1,126.25
+  2030-05-15: 53 x 21.250 = 1,126.25
+  2030-11-15: 53 x 21.250 = 1,126.25
+  2031-05-15: 53 x 21.250 = 1,126.25
+  2031-11-15: 53 x 21.250 = 1,126.25
+  2032-05-15: 53 x 21.250 = 1,126.25
+  2032-11-15: 53 x 21.250 = 1,126.25
+  2033-05-15: 53 x 21.250 = 1,126.25
+  2033-11-15: 53 x 21.250 = 1,126.25
+  2034-05-15: 53 x 21.250 = 1,126.25
+  2034-11-15: 53 x 21.250 = 1,126.25
+  2035-05-15: 53 x 21.250 = 1,126.25
+  2035-11-15: 53 x 21.250 = 1,126.25
+  2036-05-15: 53 x 21.250 = 1,126.25
+  2036-11-15: 53 x 21.250 = 1,126.25
+  2037-05-15: 53 x 21.250 = 1,126.25
+  2037-11-15: 53 x 21.250 = 1,126.25
+  2038-05-15: 53 x 21.250 = 1,126.25
+  2038-11-15: 53 x 21.250 = 1,126.25
+  2039-05-15: 53 x 21.250 = 1,126.25
+  2039-11-15: 53 x 21.250 = 1,126.25
+  2040-05-15: 53 x 21.250 = 1,126.25
+  2040-11-15: 53 x 1021.250 = 54,126.25
+2027-01-01: 44 x Treasury 3.125% Nov2041; paid33,865.80 beforecommission
+  2027-05-15: 44 x 15.625 = 687.50
+  2027-11-15: 44 x 15.625 = 687.50
+  2028-05-15: 44 x 15.625 = 687.50
+  2028-11-15: 44 x 15.625 = 687.50
+  2029-05-15: 44 x 15.625 = 687.50
+  2029-11-15: 44 x 15.625 = 687.50
+  2030-05-15: 44 x 15.625 = 687.50
+  2030-11-15: 44 x 15.625 = 687.50
+  2031-05-15: 44 x 15.625 = 687.50
+  2031-11-15: 44 x 15.625 = 687.50
+  2032-05-15: 44 x 15.625 = 687.50
+  2032-11-15: 44 x 15.625 = 687.50
+  2033-05-15: 44 x 15.625 = 687.50
+  2033-11-15: 44 x 15.625 = 687.50
+  2034-05-15: 44 x 15.625 = 687.50
+  2034-11-15: 44 x 15.625 = 687.50
+  2035-05-15: 44 x 15.625 = 687.50
+  2035-11-15: 44 x 15.625 = 687.50
+  2036-05-15: 44 x 15.625 = 687.50
+  2036-11-15: 44 x 15.625 = 687.50
+  2037-05-15: 44 x 15.625 = 687.50
+  2037-11-15: 44 x 15.625 = 687.50
+  2038-05-15: 44 x 15.625 = 687.50
+  2038-11-15: 44 x 15.625 = 687.50
+  2039-05-15: 44 x 15.625 = 687.50
+  2039-11-15: 44 x 15.625 = 687.50
+  2040-05-15: 44 x 15.625 = 687.50
+  2040-11-15: 44 x 15.625 = 687.50
+  2041-05-15: 44 x 15.625 = 687.50
+  2041-11-15: 44 x 1015.625 = 44,687.50
+
+HAND CHECK:2037Treasury pays4.75% of1,000=$47.50/year;halfyearcoupon=$23.75.
+A Jan2027purchase receives Feb/Aug2027throughFeb2037;at maturity1,000principal joinscoupon.
+Every receipt is held as0%cash and counted only for bills afteritsactualpaymentdate.
+
+DECISION: IPS staged operating-first framework is NOT inherently unfundable in these dated
+scenarios: an explicit cash-feasible schedule exists without debt or equity returns.
+Conservative assumptions make cash dominate Treasuryfunds for the early maturitygap;
+the robust replacement example may use nofunds. This is NOT a trade recommendation.
+Do not call all85,781.79recordedcash verifiedGiftmoney: first earmark operatingrepair.
+No new IPS allocation policy is required by this feasibility result; maintain staging,
+cash-date checks, scenario testing and prior operating topups. Exact orders need currentquotes,
+positionverification, revisedfundcashflows and rulesreview before human entry.
+LIMITS: selected datedinputprice scenario, futurecleanprice assumptions, no jointlyrandomrates,
+no calibrated confidencelevel, fundproceeds not verified,2%chosen not statisticallyvalidated;
+cash held untilyearsaway has purchasingpower risk though obligation dollarsarefixed.
+No claim that futureholdingsorprices canbe lockedtoday; no automatic liquidatingofexistingfunds.
