@@ -1,5 +1,11 @@
 # Brief — Lock in the promise now
 
+**Historical — superseded in part on 4 November.** Do not use the old day-one
+lock or validated-100% funding claims, forecasts or order list as current
+instructions. Read `2026-11-04-back-the-promise.md` for the revised policy and
+the explanation of the financing/fund-payout errors. Executed Trading Notes
+remain the unedited historical account of what was entered.
+
 **Decision date:** 30 Sep 2026 · **Decided by:** Claude (lead strategist) ·
 **Decision log:** `99-admin/decision-log.md`, entry of 30 Sep ·
 **Numbers from:** `03-modeling/src/thesis_decision_2026_09_30.py` → output in

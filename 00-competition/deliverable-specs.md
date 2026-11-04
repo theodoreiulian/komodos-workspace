@@ -67,12 +67,16 @@ directly to criterion 4.
 
 ## 3. Investment Policy Statement — due 6 Nov 2026, 5:00 p.m. ET ⚠️⚠️
 
+**Team status:** submitted4Nov2026 and receipt confirmed. Archived text and
+record: `05-deliverables/02-investment-policy-statement/submitted.md` and
+`submission-record.md`. Official roster name verified as **Komodos**.
+
 The single most constrained document of the competition.
 
-⚠️ **Week 5 email: "Review the updated IPS instructions."** The updated
-instructions are not yet in this repository. The Team Leader must add them to
-`source-documents/` before the IPS is finalised (`week-5-email-2026-10.md`).
-Until then, this section is the rule.
+**Clarification, 4 Nov:** the Team Leader confirms the handout just distributed
+is the same archived `2026_WGY_Investment-Policy-Statement-Requirements.pdf`.
+No replacement PDF is awaited. The Week 4 submission-method update below still
+applies; the Team Leader has not reversed it.
 
 ### Structure — 3 pages maximum
 

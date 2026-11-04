@@ -1,5 +1,12 @@
 # Differentiation angles — how we could stand apart
 
+**4 November update:** these are historical hypotheses. The personalized AI
+hedge thesis was rejected; literal day-one certainty and some earlier market
+claims are unproved. Claims about the typical competitor are speculation,
+not evidence of what other teams submit. Current sourced assessment:
+`strategy-evidence-2026-11-04.md`; current adopted framework:
+`../02-strategy/strategy-2026-11-04.md`.
+
 *Research, not decisions. Nothing here is chosen. Each angle is stated as a
 thesis, the evidence for it, how it would actually show up in the three graded
 deliverables, the strongest argument against it, and what we would have to

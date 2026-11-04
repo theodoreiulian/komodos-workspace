@@ -1,6 +1,8 @@
 # Team
 
 **The Komodos** — American Section, Lycée International de Saint-Germain-en-Laye.
+**Official submitted roster team name: Komodos**, verified on the application
+review page during IPS submission,4Nov2026. Use that exact name in official fields.
 Five students + teacher advisor (Marc joined on 7 Oct 2026). *(Names must match the official roster exactly —
 First Name, Last Initial on the IPS title page.)*
 
